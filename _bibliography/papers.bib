@@ -1,15 +1,3 @@
-@INPROCEEDINGS{9221198,
-author={A. {Goel} and C. {Tung} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
-booktitle={2020 IEEE 6th World Forum on Internet of Things (WF-IoT)}, title={A Survey of Methods for Low-Power Deep Learning and Computer Vision},
-year={2020},
-volume={},
-number={},
-pages={1-6},
-abstract={Deep neural networks (DNNs) are successful in many computer vision tasks. However, the most accurate DNNs require millions of parameters and operations, making them energy, computation and memory intensive. This impedes the deployment of large DNNs in low-power devices with limited compute resources. Recent research improves DNN models by reducing the memory requirement, energy consumption, and number of operations without significantly decreasing the accuracy. This paper surveys the progress of low-power deep learning and computer vision, specifically in regards to inference, and discusses the methods for compacting and accelerating DNN models. The techniques can be divided into four major categories: (1) parameter quantization and pruning, (2) compressed convolutional filters and matrix factorization, (3) network architecture search, and (4) knowledge distillation. We analyze the accuracy, advantages, disadvantages, and potential solutions to the problems with the techniques in each category. We also discuss new evaluation metrics as a guideline for future research.},
-keywords={computer vision;learning (artificial intelligence);matrix decomposition;neural nets;knowledge distillation;network architecture search;matrix factorization;compressed convolutional filters;parameter quantization and pruning;computer vision tasks;deep neural networks;DNN models;low-power deep learning;energy consumption;memory requirement;low-power devices;neural networks;computer vision;low-power},
-doi={10.1109/WF-IoT48130.2020.9221198},
-ISSN={},
-month={June},}
 @INPROCEEDINGS{9190851,
 author={S. {Aghajanzadeh} and R. {Naidu} and S. -H. {Chen} and C. {Tung} and A. {Goel} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
 booktitle={2020 IEEE International Conference on Image Processing (ICIP)}, title={Camera Placement Meeting Restrictions of Computer Vision},
@@ -21,7 +9,62 @@ abstract={In the blooming era of smart edge devices, surveillance cameras have b
 keywords={Cameras;Computer vision;Surveillance;Shape;Object tracking;NP-hard problem;Security;Computational Geometry;Computer Vision;Camera Placement},
 doi={10.1109/ICIP40778.2020.9190851},
 ISSN={2381-8549},
+html={http://ecommons.luc.edu/cs_facpubs/250},
 month={Oct},}
+
+
+@article{10.1145/3408062,
+author = {Goel, Abhinav and Aghajanzadeh, Sara and Tung, Caleb and Chen, Shuo-Han and Thiruvathukal, George K. and Lu, Yung-Hsiang},
+title = {Modular Neural Networks for Low-Power Image Classification on Embedded Devices},
+year = {2020},
+issue_date = {October 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {26},
+number = {1},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/3408062},
+doi = {10.1145/3408062},
+abstract = {Embedded devices are generally small, battery-powered computers with limited hardware resources. It is difficult to run deep neural networks (DNNs) on these devices, because DNNs perform millions of operations and consume significant amounts of energy. Prior research has shown that a considerable number of a DNN’s memory accesses and computation are redundant when performing tasks like image classification. To reduce this redundancy and thereby reduce the energy consumption of DNNs, we introduce the Modular Neural Network Tree architecture. Instead of using one large DNN for the classifier, this architecture uses multiple smaller DNNs (called modules) to progressively classify images into groups of categories based on a novel visual similarity metric. Once a group of categories is selected by a module, another module then continues to distinguish among the similar categories within the selected group. This process is repeated over multiple modules until we are left with a single category. The computation needed to distinguish dissimilar groups is avoided, thus reducing redundant operations, memory accesses, and energy. Experimental results using several image datasets reveal the effectiveness of our proposed solution to reduce memory requirements by 50% to 99%, inference time by 55% to 95%, energy consumption by 52% to 94%, and the number of operations by 15% to 99% when compared with existing DNN architectures, running on two different embedded systems: Raspberry Pi 3 and Raspberry Pi Zero.},
+journal = {ACM Trans. Des. Autom. Electron. Syst.},
+month = oct,
+articleno = {1},
+numpages = {35},
+html={http://ecommons.luc.edu/cs_facpubs/254},
+keywords = {image classification, Low-power}
+}
+
+
+@inproceedings{10.1145/3370748.3406569,
+author = {Goel, Abhinav and Tung, Caleb and Aghajanzadeh, Sara and Ghodgaonkar, Isha and Ghosh, Shreya and Thiruvathukal, George K. and Lu, Yung-Hsiang},
+title = {Low-Power Object Counting with Hierarchical Neural Networks},
+year = {2020},
+isbn = {9781450370530},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3370748.3406569},
+doi = {10.1145/3370748.3406569},
+abstract = {Deep Neural Networks (DNNs) achieve state-of-the-art accuracy in many computer vision tasks, such as object counting. Object counting takes two inputs: an image and an object query and reports the number of occurrences of the queried object. To achieve high accuracy, DNNs require billions of operations, making them difficult to deploy on resource-constrained, low-power devices. Prior work shows that a significant number of DNN operations are redundant and can be eliminated without affecting the accuracy. To reduce these redundancies, we propose a hierarchical DNN architecture for object counting. This architecture uses a Region Proposal Network (RPN) to propose regions-of-interest (RoIs) that may contain the queried objects. A hierarchical classifier then efficiently finds the RoIs that actually contain the queried objects. The hierarchy contains groups of visually similar object categories. Small DNNs at each node of the hierarchy classify between these groups. The RoIs are incrementally processed by the hierarchical classifier. If the object in an RoI is in the same group as the queried object, then the next DNN in the hierarchy processes the RoI further; otherwise, the RoI is discarded. By using a few small DNNs to process each image, this method reduces the memory requirement, inference time, energy consumption, and number of operations with negligible accuracy loss when compared with the existing techniques.},
+booktitle = {Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design},
+pages = {163168},
+numpages = {6},
+keywords = {object counting, neural networks, low-power},
+location = {Boston, Massachusetts},
+html={http://ecommons.luc.edu/cs_facpubs/252},
+series = {ISLPED '20}
+}
+
+@article{Dematties2020,
+author = {Dario Dematties and Silvio Rizzi and George K. Thiruvathukal},
+title = "{Towards High-End Scalability on Bio-Inspired Computational Models}",
+year = "2020",
+month = "8",
+url = "https://figshare.com/articles/presentation/Towards_High-End_Scalability_on_Bio-Inspired_Computational_Models/12762260",
+doi = "10.6084/m9.figshare.12762260.v2",
+abstract = {Presentation at CyberColombia's Third HPC Summer School: Bio and Data Science Part 1 describes our work on developing a neurocomputational model inspired in specific features found in the mammalian cortex. Part 2 describes our software development efforts to build an HPC version of our work aimed at scalability on leadership class supercomputers, including a discussion of our strong and weak scaling results to date. Part 3 describes our efforts with software engineering and reproducibilty with a discussion of best practices for working with open source and hosting code, datasets, and analyses.},
+html = {https://ecommons.luc.edu/cs_facpubs/253/}
+}
+
 @INPROCEEDINGS{9202837,
 author={A. {Chakraborty} and A. {Pawar} and H. {Jang} and S. {Huang} and S. {Mishra} and S. -H. {Chen} and Y. -H. {Chang} and G. K. {Thiruvathukal} and Y. -H. {Lu}},
 booktitle={2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)}, title={A Real-Time Feature Indexing System on Live Video Streams},
@@ -32,8 +75,125 @@ pages={42-50},
 abstract={Most of the existing video storage systems rely on offline processing to support the feature-based indexing on video streams. The feature-based indexing technique provides an effective way for users to search video content through visual features, such as object categories (e.g., cars and persons). However, due to the reliance on offline processing, video streams along with their captured features cannot be searchable immediately after video streams are recorded. According to our investigation, buffering and storing live video steams are more time-consuming than the YOLO v3 object detector. Such observation motivates us to propose a real-time feature indexing (RTFI) system to enable instantaneous feature-based indexing on live video streams after video streams are captured and processed through object detectors. RTFI achieves its real-time goal via incorporating the novel design of metadata structure and data placement, the capability of modern object detector (i.e., YOLO v3), and the deduplication techniques to avoid storing repetitive video content. Notably, RTFI is the first system design for realizing real-time feature-based indexing on live video streams. RTFI is implemented on a Linux server and can improve the system throughput by upto 10.60x, compared with the base system without the proposed design. In addition, RTFI is able to make the video content searchable within 20 milliseconds for 10 live video streams after the video content is received by the proposed system, excluding the network transfer latency.},
 keywords={feature extraction;indexing;Linux;meta data;object detection;storage management;video signal processing;video streaming;RTFI;base system;video content search;real-time feature indexing system;offline processing;visual features;video storage systems;real-time feature-based indexing technique;YOLO v3 object detector;live video streams capture;metadata structure;data placement;deduplication techniques;repetitive video content storage;Linux server;network transfer latency;Streaming media;Indexing;Detectors;Feature extraction;Object detection;Real-time systems;Automobiles;object detection;data storage;real-time;feature-bassed indexing},
 doi={10.1109/COMPSAC48688.2020.00016},
+html={http://ecommons.luc.edu/cs_facpubs/249},
 ISSN={0730-3157},
 month={July},}
+
+
+
+@INPROCEEDINGS{GRS-Posters-4,
+author = {Allan Miller and George Thiruvathukal and Konstantin Laufer and Emmanuel Amobi and Sean Higgins and Linette Maliakal and Emily Meister and Jean-Luc Putter and Alex Rose and Nicholas Synovic and Sophie Von Hatten and Jonathan Warkentin and Martin Zugschwert},
+title = {Toward a containerized pipeline for longitudinal analysis of open-source software projects},
+booktitle = {Graduate Research Symposium 2020},
+abstract={Trust in open-source software is a cornerstone of scientific progress and a foundation of high-quality public services. Just as standards are integral when judging the efficacy of a novel pharmaceutical compound or determining the spread of a new disease, the software used to make those determinations should be useful, error-free, reliable, performant, and secure. A small bug in an application, library, or framework can lead to economic loss and even loss of life. We rely on software developers to be dynamic and responsive to user review and bug-reporting. Our team developed an open-source modular pipeline to perform empirical investigations of software quality. A key innovation of our approach is to look at projects “from a distance” similar to methods used in climate, e.g. satellite images being used to observe environmental impacts in air quality/rain forests. Instead of looking at language-specific source code features, our pipeline uses a language-agnostic high-level approach to track software quality by focusing on the development process itself, which yields great insight into the processes programmers use to write and maintain their software. Our distributed modular approach to analytics allows the pipeline to be easily extended to support additional metrics in future work. We store extracted data in an embedded SQLite database, which means that analysis can proceed without complex server setup, let alone hosting the software on dedicated servers. Our analytical modules are designed for efficiency, and future runs of our software only collect missing data, supporting the incremental analysis of known, important open-source projects.},
+year={2020},
+html={http://ecommons.luc.edu/grs/2020/posters/4}
+}
+
+
+@article{ecommons-251,
+author = {Sara Aghajanzadeh and Andrew T. Jebb and Yifan Li and Yung-Hsiang Lu and George K. Thiruvathukal},
+title = "{Observing Human Behavior Through Worldwide Network Cameras}",
+year = "2020",
+month = "6",
+doi = "10.1037/0000193-006",
+abstract = {This chapter presents an overview of the opportunities from video data available in worldwide network cameras and a research tool, called CAM² (Continuous Analysis of Many CAMeras), for obtaining and analyzing visual data at a large scale. It starts by providing an overview of computer technologies for analyzing human behaviors from video data, followed by a discussion of how various human behaviors are classified and the challenges in creating analysis software. The chapter uses several examples as sources of data (i.e., network cameras) from which it would be possible to observe human behaviors. It then introduces a software infrastructure built at Purdue University, called CAM², as a general-purpose computing platform for retrieving and analyzing visual data from many sources across the globe. Behavioral researchers use video cameras to capture contextual information, human facial and body information, and social interactions.},
+html = {https://ecommons.luc.edu/cs_facpubs/251/}
+}
+
+@misc{ghodgaonkar2020observing,
+      title={Observing Responses to the COVID-19 Pandemic using Worldwide Network Cameras}, 
+      author={Isha Ghodgaonkar and Abhinav Goel and Fischer Bordwell and Caleb Tung and Sara Aghajanzadeh and Noah Curran and Ryan Chen and Kaiwen Yu and Sneha Mahapatra and Vishnu Banna and Gore Kao and Kate Lee and Xiao Hu and Nick Eliopolous and Akhil Chinnakotla and Damini Rijhwani and Ashley Kim and Aditya Chakraborty and Mark Daniel Ward and Yung-Hsiang Lu and George K. Thiruvathukal},
+      year={2020},
+      eprint={2005.09091},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      abstract={COVID-19 has resulted in a worldwide pandemic, leading to "lockdown" policies and social distancing. The pandemic has profoundly changed the world. Traditional methods for observing these historical events are difficult because sending reporters to areas with many infected people can put the reporters' lives in danger. New technologies are needed for safely observing responses to these policies. This paper reports using thousands of network cameras deployed worldwide for the purpose of witnessing activities in response to the policies. The network cameras can continuously provide real-time visual data (image and video) without human efforts. Thus, network cameras can be utilized to observe activities without risking the lives of reporters. This paper describes a project that uses network cameras to observe responses to governments' policies during the COVID-19 pandemic (March to April in 2020). The project discovers over 30,000 network cameras deployed in 110 countries. A set of computer tools are created to collect visual data from network cameras continuously during the pandemic. This paper describes the methods to discover network cameras on the Internet, the methods to collect and manage data, and preliminary results of data analysis. This project can be the foundation for observing the possible "second wave" in fall 2020. The data may be used for post-pandemic analysis by sociologists, public health experts, and meteorologists.
+},
+      html={https://ecommons.luc.edu/cs_facpubs/247/},
+      pdf={https://arxiv.org/abs/2005.09091}
+}
+
+
+@misc{FLICYouTube,
+    title={FLIC: A Distributed Fog Cache for City-Scale Applications (Presentatiion)},
+    author={Jack West and Neil Klingensmith and George K. Thiruvathukal},
+    abstract={We present FLIC, a distributed software data caching framework for fogs that reduces network traffic and latency. FLICis targeted toward city-scale deployments of cooperative IoT devices in which each node gathers and shares data with surrounding devices. As machine learning and other data processing techniques that require large volumes of training data are ported to low-cost and low-power IoT systems, we expect that data analysis will be moved away from the cloud. Separation from the cloud will reduce reliance on power-hungry centralized cloud-based infrastructure. However, city-scale deployments of cooperative IoT devices often connect to the Internet with cellular service, in which service charges are proportional to network usage. IoT system architects must be clever in order to keep costs down in these scenarios. To reduce the network bandwidth required to operate city-scale deployments of cooperative IoT systems, FLIC implements a distributed cache on the IoT nodes in the fog. FLIC allows the IoT network to share its data without repetitively interacting with a simple cloud storage service reducing calls out to a backing store. Our results displayed a less than 2% miss rate on reads. Thus, allowing for only 5% of requests needing the backing store. We were also able to achieve more than 50% reduction in bytes transmitted per second.},
+    html={https://www.youtube.com/watch?v=avYV1m_1yg8&feature=youtu.be},
+    year={2020}
+}
+
+@ARTICLE{10.3389/fncir.2020.00012,  
+AUTHOR={Dematties, Dario and Rizzi, Silvio and Thiruvathukal, George K. and Pérez, Mauricio David and Wainselboim, Alejandro and Zanutto, B. Silvano},
+TITLE={A Computational Theory for the Emergence of Grammatical Categories in Cortical Dynamics},	
+JOURNAL={Frontiers in Neural Circuits},	
+VOLUME={14},
+PAGES={12},
+YEAR={2020},
+URL={https://www.frontiersin.org/article/10.3389/fncir.2020.00012},
+DOI={10.3389/fncir.2020.00012},
+ISSN={1662-5110},
+ABSTRACT={A general agreement in psycholinguistics claims that syntax and meaning are unified precisely and very quickly during online sentence processing. Although several theories have advanced arguments regarding the neurocomputational bases of this phenomenon, we argue that these theories could potentially benefit by including neurophysiological data concerning cortical dynamics constraints in brain tissue. In addition, some theories promote the integration of complex optimization methods in neural tissue. In this paper we attempt to fill these gaps introducing a computational model inspired in the dynamics of cortical tissue. In our modeling approach, proximal afferent dendrites produce stochastic cellular activations, while distal dendritic branches–on the other hand–contribute independently to somatic depolarization by means of dendritic spikes, and finally, prediction failures produce massive firing events preventing formation of sparse distributed representations. The model presented in this paper combines semantic and coarse-grained syntactic constraints for each word in a sentence context until grammatically related word function discrimination emerges spontaneously by the sole correlation of lexical information from different sources without applying complex optimization methods. By means of support vector machine techniques, we show that the sparse activation features returned by our approach are well suited—bootstrapping from the features returned by Word Embedding mechanisms—to accomplish grammatical function classification of individual words in a sentence. In this way we develop a biologically guided computational explanation for linguistically relevant unification processes in cortex which connects psycholinguistics to neurobiological accounts of language. We also claim that the computational hypotheses established in this research could foster future work on biologically-inspired learning algorithms for natural language processing applications.},
+html={https://ecommons.luc.edu/cs_facpubs/240/},
+pdf={https://www.frontiersin.org/articles/10.3389/fncir.2020.00012/full}
+}
+
+@inproceedings{ParCo2019,
+  author          = {Dario Dematties and George K. Thiruvathukal and Silvio Rizzi and Alejandro Wainselboim and B. Silvano Zanutto},
+  title           = {Towards High-End Scalability on Biologically-Inspired Computational ModelsAuthors},
+  booktitle       = {Parallel Computing: Technology Trends},
+  pages           = {497-506},
+  editor          = {Ian Foster and Gerhard R. Joubert and Luděk Kučera and Wolfgang E. Nagel and Frans Peter},
+  year            = {2020},
+  html            = {https://ecommons.luc.edu/cs_facpubs/242/}
+}
+
+
+@misc{west2020voltkey,
+      title={VoltKey: Using Power Line Noise for Zero-Involvement Pairing and Authentication (Demo Abstract)}, 
+      author={Jack West and Tien VoNguyen and Isaac Ahlgren and Iryna Motyashok and George K. Thiruvathukal and Neil Klingensmith},
+      year={2020},
+      eprint={2004.00092},
+      archivePrefix={arXiv},
+      primaryClass={eess.SP},
+      html={https://ecommons.luc.edu/cs_facpubs/245/},
+      pdf={https://arxiv.org/abs/2004.00092}
+}
+
+@INPROCEEDINGS{9221198,
+author={A. {Goel} and C. {Tung} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
+booktitle={2020 IEEE 6th World Forum on Internet of Things (WF-IoT)}, title={A Survey of Methods for Low-Power Deep Learning and Computer Vision},
+year={2020},
+volume={},
+number={},
+pages={1-6},
+abstract={Deep neural networks (DNNs) are successful in many computer vision tasks. However, the most accurate DNNs require millions of parameters and operations, making them energy, computation and memory intensive. This impedes the deployment of large DNNs in low-power devices with limited compute resources. Recent research improves DNN models by reducing the memory requirement, energy consumption, and number of operations without significantly decreasing the accuracy. This paper surveys the progress of low-power deep learning and computer vision, specifically in regards to inference, and discusses the methods for compacting and accelerating DNN models. The techniques can be divided into four major categories: (1) parameter quantization and pruning, (2) compressed convolutional filters and matrix factorization, (3) network architecture search, and (4) knowledge distillation. We analyze the accuracy, advantages, disadvantages, and potential solutions to the problems with the techniques in each category. We also discuss new evaluation metrics as a guideline for future research.},
+keywords={computer vision;learning (artificial intelligence);matrix decomposition;neural nets;knowledge distillation;network architecture search;matrix factorization;compressed convolutional filters;parameter quantization and pruning;computer vision tasks;deep neural networks;DNN models;low-power deep learning;energy consumption;memory requirement;low-power devices;neural networks;computer vision;low-power},
+doi={10.1109/WF-IoT48130.2020.9221198},
+ISSN={},
+html={http://ecommons.luc.edu/cs_facpubs/241},
+month={June},}
+
+
+@inproceedings{10.1145/3366423.3380063,
+author = {Hu, Xiao and Wang, Haobo and Vegesana, Anirudh and Dube, Somesh and Yu, Kaiwen and Kao, Gore and Chen, Shuo-Han and Lu, Yung-Hsiang and Thiruvathukal, George K. and Yin, Ming},
+title = {Crowdsourcing Detection of Sampling Biases in Image Datasets},
+year = {2020},
+isbn = {9781450370233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3366423.3380063},
+doi = {10.1145/3366423.3380063},
+abstract = {Despite many exciting innovations in computer vision, recent studies reveal a number of risks in existing computer vision systems, suggesting results of such systems may be unfair and untrustworthy. Many of these risks can be partly attributed to the use of a training image dataset that exhibits sampling biases and thus does not accurately reflect the real visual world. Being able to detect potential sampling biases in the visual dataset prior to model development is thus essential for mitigating the fairness and trustworthy concerns in computer vision. In this paper, we propose a three-step crowdsourcing workflow to get humans into the loop for facilitating bias discovery in image datasets. Through two sets of evaluation studies, we find that the proposed workflow can effectively organize the crowd to detect sampling biases in both datasets that are artificially created with designed biases and real-world image datasets that are widely used in computer vision research and system development.},
+booktitle = {Proceedings of The Web Conference 2020},
+pages = {2955–2961},
+numpages = {7},
+keywords = {workflow design, image dataset, sampling bias, crowdsourcing},
+location = {Taipei, Taiwan},
+series = {WWW '20},
+html = {http://ecommons.luc.edu/cs_facpubs/244},
+}
+
 @INPROCEEDINGS{9103479,
 author={J. {West} and N. {Klingensmith} and G. {Thiruvathukal}},
 booktitle={2020 IEEE International Conference on Fog Computing (ICFC)}, title={FLIC: A Distributed Fog Cache for City-Scale Applications},
@@ -45,31 +205,11 @@ abstract={We present FLIC, a distributed software data caching framework for fog
 keywords={cache storage;cellular radio;cloud computing;cooperative communication;data analysis;Internet of Things;learning (artificial intelligence);telecommunication power management;telecommunication traffic;data analysis;power-hungry centralized cloud-based infrastructure;low-power IoT systems;FLIC;IoT network;cloud storage service;distributed fog cache;city-scale applications;distributed software data caching framework;network traffic;cooperative IoT devices;machine learning;Coherence;Distributed databases;Cloud computing;Software;Bandwidth;Computer architecture;Containers},
 doi={10.1109/ICFC49376.2020.00019},
 ISSN={},
+html={http://ecommons.luc.edu/cs_facpubs/243},
 month={April},}
-@ARTICLE{8976106,
-author={A. {Trisovic} and C. R. {Jones} and B. {Couturier} and M. {Clemencic}},
-journal={Computing in Science Engineering}, title={Provenance Tracking in the LHCb Software},
-year={2020},
-volume={22},
-number={2},
-pages={88-94},
-abstract={Even though computational reproducibility is widely accepted as necessary for research validation and reuse, it is often not considered during the research process. This is because reproducibility tools are typically stand-alone and require additional training to be employed. In this article, we present a solution to foster reproducibility, which is integrated within existing scientific software that is actively used in the Large Hadron Collider beauty (LHCb) collaboration. Our provenance tracking service captures metadata of a dataset, which is then saved inside the output data file on the disk. The captured information allows a complete understanding of how the file was produced and enables a user to reproduce the dataset, even when the original input code (that was used to initially produce the dataset) is altered or lost. This article describes the implementation of the service and gives examples of its application.},
-keywords={high energy physics instrumentation computing;meta data;provenance tracking;LHCb software;computational reproducibility;research validation;reproducibility tools;additional training;scientific software;service captures metadata;output data file;captured information;original input code;Large Hadron Collider beauty collaboration;Data models;Metadata;Physics;Data processing;C++ languages;Software development management;data provenance;reproducibility},
-doi={10.1109/MCSE.2020.2970625},
-ISSN={1558-366X},
-month={March},}
-@ARTICLE{8842605,
-author={O. {Mesnard} and L. A. {Barba}},
-journal={Computing in Science Engineering}, title={Reproducible Workflow on a Public Cloud for Computational Fluid Dynamics},
-year={2020},
-volume={22},
-number={1},
-pages={102-116},
-abstract={In a new effort to make our research transparent and reproducible by others, we developed a workflow to run and share computational studies on the public cloud Microsoft Azure. It uses Docker containers to create an image of the application software stack. We also adopt several tools that facilitate creating and managing virtual machines on compute nodes and submitting jobs to these nodes. The configuration files for these tools are part of an expanded “reproducibility package” that includes workflow definitions for cloud computing, in addition to input files and instructions. This facilitates recreating the cloud environment to rerun the computations under the same conditions. Although cloud providers have improved their offerings, many researchers using high-performance computing (HPC) are still skeptical about cloud computing. Thus, we ran benchmarks for tightly coupled applications to confirm that the latest HPC nodes of Microsoft Azure are indeed a viable alternative to traditional on-site HPC clusters. We also show that cloud offerings are now adequate to complete computational fluid dynamics studies with in-house research software that uses parallel computing with GPUs. Finally, we share with the community what we have learned from nearly two years of using Azure cloud to enhance the transparency and reproducibility in our computational simulations.},
-keywords={cloud computing;computational fluid dynamics;parallel processing;virtual machines;cloud offerings;computational fluid dynamics studies;in-house research software;parallel computing;Azure cloud;reproducible workflow;public cloud Microsoft Azure;application software stack;expanded reproducibility package;cloud computing;cloud environment;high-performance computing;HPC nodes;virtual machines;Docker containers;Cloud computing;Application software;Research and development;Software packages;Computational modeling;Virtual machining;Runtime environment;Benchmark testing},
-doi={10.1109/MCSE.2019.2941702},
-ISSN={1558-366X},
-month={Jan},}
+
+
+
 @INPROCEEDINGS{9028394,
 author={R. I. {Greenberg} and G. K. {Thiruvathukal}},
 booktitle={2019 IEEE Frontiers in Education Conference (FIE)}, title={Exercises Integrating High School Mathematics with Robot Motion Planning},
@@ -82,6 +222,8 @@ keywords={computer aided instruction;educational institutions;educational robots
 doi={10.1109/FIE43999.2019.9028394},
 ISSN={2377-634X},
 month={Oct},}
+
+
 @ARTICLE{8848161,
 author={Y. {Lu} and G. K. {Thiruvathukal} and A. S. {Kaseb} and K. {Gauen} and D. {Rijhwani} and R. {Dailey} and D. {Malik} and Y. {Huang} and S. {Aghajanzadeh} and M. M. {Guo}},
 journal={Computer}, title={See the World Through Network Cameras},
@@ -94,6 +236,8 @@ keywords={cameras;network cameras;Cameras;IP networks;Urban areas;Real-time syst
 doi={10.1109/MC.2019.2906841},
 ISSN={1558-0814},
 month={Oct},}
+
+
 @INPROCEEDINGS{8695375,
 author={C. {Tung} and M. R. {Kelleher} and R. J. {Schlueter} and B. {Xu} and Y. {Lu} and G. K. {Thiruvathukal} and Y. {Chen} and Y. {Lu}},
 booktitle={2019 IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)}, title={Large-Scale Object Detection of Images from Network Cameras in Variable Ambient Lighting Conditions},
@@ -106,6 +250,8 @@ keywords={cameras;computer vision;lighting;object detection;video cameras;curate
 doi={10.1109/MIPR.2019.00080},
 ISSN={},
 month={March},}
+
+
 @ARTICLE{8693826,
 author={S. {Alyamkin} and M. {Ardi} and A. C. {Berg} and A. {Brighton} and B. {Chen} and Y. {Chen} and H. {Cheng} and Z. {Fan} and C. {Feng} and B. {Fu} and K. {Gauen} and A. {Goel} and A. {Goncharenko} and X. {Guo} and S. {Ha} and A. {Howard} and X. {Hu} and Y. {Huang} and D. {Kang} and J. {Kim} and J. G. {Ko} and A. {Kondratyev} and J. {Lee} and S. {Lee} and S. {Lee} and Z. {Li} and Z. {Liang} and J. {Liu} and X. {Liu} and Y. {Lu} and Y. {Lu} and D. {Malik} and H. H. {Nguyen} and E. {Park} and D. {Repin} and L. {Shen} and T. {Sheng} and F. {Sun} and D. {Svitov} and G. K. {Thiruvathukal} and B. {Zhang} and J. {Zhang} and X. {Zhang} and S. {Zhuo}},
 journal={IEEE Journal on Emerging and Selected Topics in Circuits and Systems}, title={Low-Power Computer Vision: Status, Challenges, and Opportunities},
@@ -118,6 +264,8 @@ keywords={computer vision;object detection;visual data;decision making;batteries
 doi={10.1109/JETCAS.2019.2911899},
 ISSN={2156-3365},
 month={June},}
+
+
 @ARTICLE{8594612,
 author={Z. {Kapach} and A. {Ulmer} and D. {Merrick} and A. {Alikhan} and Y. {Lu} and A. {Mohan} and A. S. {Kaseb} and G. K. {Thiruvathukal}},
 journal={IEEE MultiMedia}, title={Cloud Resource Optimization for Processing Multiple Streams of Visual Data},
@@ -130,6 +278,8 @@ keywords={cloud computing;data visualisation;optimisation;resource allocation;We
 doi={10.1109/MMUL.2018.2890255},
 ISSN={1941-0166},
 month={July},}
+
+
 @INPROCEEDINGS{8588655,
 author={N. U. {Eisty} and G. K. {Thiruvathukal} and J. C. {Carver}},
 booktitle={2018 IEEE 14th International Conference on e-Science (e-Science)}, title={A Survey of Software Metric Use in Research Software Development},
@@ -142,6 +292,8 @@ keywords={software development management;software libraries;software metrics;so
 doi={10.1109/eScience.2018.00036},
 ISSN={},
 month={Oct},}
+
+
 @INPROCEEDINGS{8574200,
 author={C. {Surakitbanharn} and C. {Yau} and G. {Wang} and A. {Chawla} and Y. {Pan} and Z. {Sun} and S. {Yellin} and D. {Ebert} and Y. {Lu} and G. K. {Thiruvathukal}},
 booktitle={2018 IEEE International Symposium on Technologies for Homeland Security (HST)}, title={Cross-referencing social media and public surveillance camera data for disaster response},
@@ -154,6 +306,8 @@ keywords={cameras;disasters;emergency management;social networking (online);soci
 doi={10.1109/THS.2018.8574200},
 ISSN={},
 month={Oct},}
+
+
 @INPROCEEDINGS{8396976,
 author={A. S. {Kaseb} and B. {Fu} and A. {Mohan} and Y. {Lu} and A. {Reibman} and G. K. {Thiruvathukal}},
 booktitle={2018 IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)}, title={Analyzing Real-Time Multimedia Content from Network Cameras Using CPUs and GPUs in the Cloud},
@@ -166,6 +320,8 @@ keywords={bin packing;cloud computing;data analysis;graphics processing units;mi
 doi={10.1109/MIPR.2018.00020},
 ISSN={},
 month={April},}
+
+
 @INPROCEEDINGS{8102956,
 author={K. {Gauen} and R. {Dailey} and J. {Laiman} and Y. {Zi} and N. {Asokan} and Y. {Lu} and G. K. {Thiruvathukal} and M. {Shyu} and S. {Chen}},
 booktitle={2017 IEEE International Conference on Information Reuse and Integration (IRI)}, title={Comparison of Visual Datasets for Machine Learning},
@@ -178,6 +334,8 @@ keywords={learning (artificial intelligence);object detection;object recognition
 doi={10.1109/IRI.2017.59},
 ISSN={},
 month={Aug},}
+
+
 @INPROCEEDINGS{7185052,
 author={W. L. {Honig} and K. {Läufer} and G. K. {Thiruvathukal}},
 booktitle={10th IEEE International Symposium on Industrial Embedded Systems (SIES)}, title={A framework architecture for student learning in distributed embedded systems},
@@ -190,6 +348,8 @@ keywords={computer science education;educational courses;embedded systems;Intern
 doi={10.1109/SIES.2015.7185052},
 ISSN={2150-3117},
 month={June},}
+
+
 @INBOOK{6282257,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Front Matter},
@@ -204,6 +364,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282257},}
+
+
 @INBOOK{6282255,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Notes},
@@ -218,6 +380,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282255},}
+
+
 @INBOOK{6282261,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={“Wii Is for Everyone”: A Social Platform},
@@ -232,6 +396,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282261},}
+
+
 @INBOOK{6282263,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Active at the Periphery: The Wii Balance Board},
@@ -246,6 +412,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282263},}
+
+
 @INBOOK{6282265,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={“Power Isn't Everything”: The Wii Console},
@@ -260,6 +428,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282265},}
+
+
 @INBOOK{6282267,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Bibliography},
@@ -274,6 +444,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282267},}
+
+
 @INBOOK{6282256,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Index},
@@ -288,6 +460,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282256},}
+
+
 @INBOOK{6282260,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={After the Revolution},
@@ -302,6 +476,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282260},}
+
+
 @INBOOK{6282262,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Channeling the System: Access, Distribution, and Transmission},
@@ -316,6 +492,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282262},}
+
+
 @INBOOK{6282264,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Core Controller: The Wii Remote},
@@ -330,6 +508,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282264},}
+
+
 @INBOOK{6282266,
 author={S. E. {Jones} and G. K. {Thiruvathukal}},
 booktitle={Codename Revolution: The Nintendo Wii Platform}, title={Introduction: Starting with Revolution: The Wii as a Platform},
@@ -344,6 +524,8 @@ ISSN={},
 publisher={MIT Press},
 isbn={9780262301312},
 url={https://ieeexplore.ieee.org/document/6282266},}
+
+
 @INPROCEEDINGS{6220733,
 author={J. P. {Kaylor} and K. {Läufer} and G. K. {Thiruvathukal}},
 booktitle={2012 IEEE International Conference on Electro/Information Technology}, title={Simplifying domain modeling and memory management in user-mode filesystems with the NOFS framework},
@@ -356,6 +538,8 @@ keywords={cache storage;contracts;object-oriented methods;Web services;domain mo
 doi={10.1109/EIT.2012.6220733},
 ISSN={2154-0373},
 month={May},}
+
+
 @ARTICLE{5999784,
 author={K. {Laufer} and G. K. {Thiruvathukal} and D. {Dennis}},
 journal={Computing in Science Engineering}, title={Moving Academic Department Functions to Social Networks and Clouds: Initial Experiences},
@@ -368,6 +552,8 @@ keywords={social networking (online);academic department function;social network
 doi={10.1109/MCSE.2011.85},
 ISSN={1558-366X},
 month={Sep.},}
+
+
 @INPROCEEDINGS{5612094,
 author={J. {Kaylor} and K. {Läufer} and G. K. {Thiruvathukal}},
 booktitle={2010 IEEE International Conference on Electro/Information Technology}, title={Online Layered File System (OLFS): A layered and versioned filesystem and performance analysis},
@@ -380,6 +566,8 @@ keywords={inheritance;meta data;relational databases;virtual storage;online laye
 doi={10.1109/EIT.2010.5612094},
 ISSN={2154-0373},
 month={May},}
+
+
 @ARTICLE{5492950,
 author={G. K. {Thiruvathukal} and K. {Hinsen} and K. {Läufer} and J. {Kaylor}},
 journal={Computing in Science Engineering}, title={Virtualization for Computational Scientists},
@@ -392,6 +580,8 @@ keywords={operating systems (computers);virtualization;VMware Workstation;operat
 doi={10.1109/MCSE.2010.92},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{5337649,
 author={K. {Hinsen} and K. {Läufer} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Essential Tools: Version Control Systems},
@@ -404,6 +594,8 @@ keywords={Control systems;Automatic control;Writing;Project management;Distribut
 doi={10.1109/MCSE.2009.194},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @ARTICLE{5228719,
 author={K. {Laufer} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Scientific Programming: The Promises of Typed, Pure, and Lazy Functional Programming: Part II},
@@ -416,6 +608,8 @@ keywords={functional languages;functional programming;mathematics computing;prog
 doi={10.1109/MCSE.2009.147},
 ISSN={1558-366X},
 month={Sep.},}
+
+
 @ARTICLE{4784398,
 author={K. {Läufer} and G. K. {Thiruvathukal} and R. {Nishimura} and C. R. {Martínez-Eiroa}},
 journal={Computing in Science Engineering}, title={Putting a Slug to Work},
@@ -428,6 +622,8 @@ keywords={Linux;microprocessor chips;storage management;microprocessor design;em
 doi={10.1109/MCSE.2009.35},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{4653209,
 author={G. K. {Thiruvathukal} and K. {Läufer}},
 journal={Computing in Science Engineering}, title={What I Did on My Summer Vacation},
@@ -440,6 +636,8 @@ keywords={content management;formal specification;Internet telephony;wireless LA
 doi={10.1109/MCSE.2008.159},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @ARTICLE{4653200,
 author={V. {Kindratenko} and G. K. {Thiruvathukal} and S. {Gottlieb}},
 journal={Computing in Science Engineering}, title={High-Performance Computing Applications on Novel Architectures},
@@ -452,6 +650,8 @@ keywords={Computer applications;Computer architecture;Application software;Field
 doi={10.1109/MCSE.2008.149},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @INPROCEEDINGS{4554352,
 author={M. {Bone} and P. F. {Nabicht} and K. {Laufer} and G. K. {Thiruvathukal}},
 booktitle={2008 IEEE International Conference on Electro/Information Technology}, title={Taming XML: Objects first, then markup},
@@ -464,6 +664,8 @@ keywords={meta data;object-oriented languages;tree data structures;XML;XML docum
 doi={10.1109/EIT.2008.4554352},
 ISSN={2154-0373},
 month={May},}
+
+
 @ARTICLE{4454434,
 author={J. {Kaylor} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={A Virtual Computing Laboratory},
@@ -476,6 +678,8 @@ keywords={software engineering;virtual reality;virtual computing;periodic imagin
 doi={10.1109/MCSE.2008.46},
 ISSN={1558-366X},
 month={March},}
+
+
 @INPROCEEDINGS{4228151,
 author={N. {Mehta} and Y. {Kanitkar} and K. {Laufer} and G. K. {Thiruvathukal}},
 booktitle={2007 IEEE International Parallel and Distributed Processing Symposium}, title={A Model-Driven Approach to Job/Task Composition in Cluster Computing},
@@ -488,6 +692,8 @@ keywords={parallel processing;Unified Modeling Language;workstation clusters;XML
 doi={10.1109/IPDPS.2007.370423},
 ISSN={1530-2075},
 month={March},}
+
+
 @ARTICLE{4100932,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Project Hosting: Expanding the Scientific Programmer's Toolbox},
@@ -500,6 +706,8 @@ keywords={natural sciences computing;software development management;project hos
 doi={10.1109/MCSE.2007.36},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{4052528,
 author={K. {Laufer} and G. K. {Thiruvathukal} and B. {Gonzalez}},
 journal={Computing in Science Engineering}, title={A Hike through a Post-EJB J2EE Web Application Architecture, Part III},
@@ -512,6 +720,8 @@ keywords={integrated software;Java;object-oriented programming;program testing;P
 doi={10.1109/MCSE.2007.2},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{1717321,
 author={G. K. {Thiruvathukal} and K. {Laufer} and B. {Gonzalez}},
 journal={Computing in Science Engineering}, title={Unit Testing Considered Useful},
@@ -524,6 +734,8 @@ keywords={program testing;unit testing;scientific programming;software developme
 doi={10.1109/MCSE.2006.124},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @INPROCEEDINGS{1630793,
 author={P. M. {Aarestad} and A. {Ching} and G. K. {Thiruvathukal} and A. N. {Choudhary}},
 booktitle={Sixth IEEE International Symposium on Cluster Computing and the Grid (CCGRID'06)}, title={Scalable Approaches for Supporting MPI-IO Atomicity},
@@ -536,6 +748,8 @@ keywords={Testing;Application software;Large-scale systems;Libraries;File server
 doi={10.1109/CCGRID.2006.88},
 ISSN={},
 month={May},}
+
+
 @ARTICLE{1563966,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Home networking},
@@ -548,6 +762,8 @@ keywords={home computing;computer networks;home computer network;home networking
 doi={10.1109/MCSE.2006.8},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{1267615,
 author={G. K. {Thiruvathukal} and K. {Lauffer}},
 journal={Computing in Science Engineering}, title={Natural XML for data binding, processing, and persistence},
@@ -560,6 +776,8 @@ keywords={natural sciences computing;XML;program compilers;persistent objects;Na
 doi={10.1109/MCISE.2004.1267615},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{1255825,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={XML and computational science},
@@ -572,6 +790,8 @@ keywords={XML;electronic data interchange;natural sciences computing;programming
 doi={10.1109/MCISE.2004.1255825},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @INPROCEEDINGS{1240586,
 author={W. -. {Liao} and {Alok Choudhary} and K. {Coloma} and G. K. {Thiruvathukal} and L. {Ward} and E. {Russell} and N. {Pundit}},
 booktitle={2003 International Conference on Parallel Processing, 2003. Proceedings.}, title={Scalable implementations of MPI atomicity for concurrent overlapping I/O},
@@ -584,6 +804,8 @@ keywords={computational complexity;graph colouring;message passing;multiprocessi
 doi={10.1109/ICPP.2003.1240586},
 ISSN={0190-3918},
 month={Oct},}
+
+
 @ARTICLE{976439,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Java at middle age: enabling Java for computational science},
@@ -596,6 +818,8 @@ keywords={Java;program compilers;Java;language;implementation;C# language;Micros
 doi={10.1109/5992.976439},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @INPROCEEDINGS{846602,
 author={X. {Shen} and G. {Thiruvathukal} and W. {Liao} and A. {Choudhary} and A. {Singh}},
 booktitle={Proceedings Fourth International Conference/Exhibition on High Performance Computing in the Asia-Pacific Region}, title={A Java graphical user interface for large-scale scientific computations in distributed systems},
@@ -608,6 +832,8 @@ keywords={Java;graphical user interfaces;large-scale systems;digital simulation;
 doi={10.1109/HPC.2000.846602},
 ISSN={},
 month={May},}
+
+
 @INPROCEEDINGS{5727762,
 author={W. T. {O'Connell} and G. K. {Thiruvathukal} and T. W. {Christopher}},
 booktitle={1994 Internatonal Conference on Parallel Processing Vol. 2}, title={Distributed Memo: A Heterogeneously Distributed and Parallel Software Development Environment},
@@ -620,6 +846,8 @@ keywords={Heterogeneous computing. Parallel and distributed processing. Director
 doi={10.1109/ICPP.1994.94},
 ISSN={},
 month={Aug},}
+
+
 @INPROCEEDINGS{153848,
 author={G. K. {Thiruvathukal} and T. W. {Christopher}},
 booktitle={[1991] Proceedings. The Fifth International Parallel Processing Symposium}, title={A simulation of demand-driven dataflow: translation from Lucid into MDC language},
@@ -632,6 +860,8 @@ keywords={parallel algorithms;demand-driven dataflow;Lucid;MDC;Message Driven Co
 doi={10.1109/IPPS.1991.153848},
 ISSN={},
 month={April},}
+
+
 @ARTICLE{8291785,
 author={F. {Sullivan} and N. {Chonacky} and I. {Beichl} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Former CiSE EICs Reflect on the Magazines 20th Anniversary},
@@ -644,6 +874,8 @@ keywords={anniversary;history of computing;Computing in Science & Engineering},
 doi={10.1109/MCSE.2018.011111118},
 ISSN={1558-366X},
 month={January},}
+
+
 @ARTICLE{8123480,
 author={G. F. {Hurlburt} and G. K. {Thiruvathukal} and M. R. {Lee}},
 journal={IT Professional}, title={The Graph Database: Jack of All Trades or Just Not SQL?},
@@ -656,6 +888,8 @@ keywords={Special issues and sections;Graphical models;Databases;graph database;
 doi={10.1109/MITP.2017.4241475},
 ISSN={1941-045X},
 month={November},}
+
+
 @INPROCEEDINGS{7836156,
 author={J. {Payton} and T. {Barnes} and A. {Decker} and K. {Eiselt} and G. {Thiruvathukal}},
 booktitle={2016 Research on Equity and Sustained Participation in Engineering, Computing, and Technology (RESPECT)}, title={Welcome},
@@ -668,6 +902,8 @@ keywords={},
 doi={10.1109/RESPECT.2016.7836156},
 ISSN={},
 month={Aug},}
+
+
 @ARTICLE{7723786,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={El Fin},
@@ -680,6 +916,8 @@ keywords={scientific computing},
 doi={10.1109/MCSE.2016.106},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @ARTICLE{7426247,
 author={T. {Barnes} and J. {Payton} and G. K. {Thiruvathukal} and K. E. {Boyer} and J. {Forbes}},
 journal={Computing in Science Engineering}, title={Guest Editors' introduction},
@@ -692,6 +930,8 @@ keywords={Special issues and sections;Meetings;Education;broadening participatio
 doi={10.1109/MCSE.2016.26},
 ISSN={1558-366X},
 month={Mar},}
+
+
 @ARTICLE{7310945,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Cloudy with a Chance of Sunshine, or the Future of Magazine Publishing},
@@ -704,6 +944,8 @@ keywords={cloud;cloud computing;publishing;printing;Amazon;scientific computing}
 doi={10.1109/MCSE.2015.119},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @ARTICLE{7091798,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={The All-Digital Future and Digital CiSE},
@@ -716,6 +958,8 @@ keywords={Digital publications;Vint Cerf;Internet;scientific computing},
 doi={10.1109/MCSE.2015.60},
 ISSN={1558-366X},
 month={May},}
+
+
 @ARTICLE{7030313,
 author={A. {Terrel} and M. {Tobis} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Scientific Software Communities},
@@ -728,6 +972,8 @@ keywords={Special issues and sections;Software development;Scientific computing;
 doi={10.1109/MCSE.2015.21},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{7030300,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={The Next Generation of Computational Science and Engineering},
@@ -740,6 +986,8 @@ keywords={computational science;software development;scientific computing;commun
 doi={10.1109/MCSE.2015.26},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{6798648,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={What We Publish in CiSE},
@@ -752,6 +1000,8 @@ keywords={computational science;scientific computing;peer review;scientific publ
 doi={10.1109/MCSE.2014.46},
 ISSN={1558-366X},
 month={Mar},}
+
+
 @ARTICLE{6664966,
 author={G. K. {Thiruvathukal} and M. {Parashar}},
 journal={Computing in Science Engineering}, title={Cloud Computing [Guest editorial]},
@@ -764,6 +1014,8 @@ keywords={Special issues and sections;Cloud computing;cloud computing;grids;clus
 doi={10.1109/MCSE.2013.78},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{6664963,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={What's in an Algorithm?},
@@ -776,6 +1028,8 @@ keywords={algorithm;parallel computing;parallel programming;modern functional pr
 doi={10.1109/MCSE.2013.94},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{6550002,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Productivity in the Cognitive Overload Era},
@@ -788,6 +1042,8 @@ keywords={MOOCs;Piazza;e-learning;Miller's law;scientific computing;massive open
 doi={10.1109/MCSE.2013.65},
 ISSN={1558-366X},
 month={May},}
+
+
 @ARTICLE{6478747,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Computational Science, Demystified … the Future, Revealed … and CiSE, 2013},
@@ -800,6 +1056,8 @@ keywords={computational science;value-added content;scientific computing},
 doi={10.1109/MCSE.2013.22},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{6415897,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Who Needs Tablets? We Do},
@@ -812,6 +1070,8 @@ keywords={Scientific computing;Tablet computers;Electronic publishing;Internet;O
 doi={10.1109/MCSE.2013.16},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{6308597,
 author={D. S. {Milojicic} and M. {Arlitt} and D. D. {Seligmann} and G. K. {Thiruvathukal} and C. {Timmerer}},
 journal={Computer}, title={Innovation Mashups: Academic Rigor Meets Social Networking Buzz},
@@ -824,6 +1084,8 @@ keywords={IEEE Computer Society;mashups;Computing Now;STCs},
 doi={10.1109/MC.2012.313},
 ISSN={1558-0814},
 month={Sep.},}
+
+
 @ARTICLE{6241361,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Accelerating Learning with Distance Education and Open Courseware},
@@ -836,6 +1098,8 @@ keywords={online education;computer science;pedagogy;distance learning;Sphinx Py
 doi={10.1109/MCSE.2012.70},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{6159196,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Digging into Data},
@@ -848,6 +1112,8 @@ keywords={Computational science;computer science;word cloud;digital humanities;s
 doi={10.1109/MCSE.2012.22},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{5756275,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Beyond CiSE and Back to the Future},
@@ -860,6 +1126,8 @@ keywords={Online publications;multimedia content;novel architectures;scientific 
 doi={10.1109/MCSE.2011.44},
 ISSN={1558-366X},
 month={May},}
+
+
 @ARTICLE{5492947,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Your Local Cloud-Enabled Library},
@@ -872,6 +1140,8 @@ keywords={Libraries;Physics;Cloud computing;Societies;Humans;Astronomy;Space tec
 doi={10.1109/MCSE.2010.94},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{5337638,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Computational Thinking … and Doing},
@@ -884,6 +1154,8 @@ keywords={Computer science;Computer networks;Software algorithms;Application sof
 doi={10.1109/MCSE.2009.190},
 ISSN={1558-366X},
 month={Nov},}
+
+
 @ARTICLE{4454433,
 author={B. {Feiereisen} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={At Issue},
@@ -891,11 +1163,15 @@ year={2008},
 volume={10},
 number={2},
 pages={60-64},
-abstract={In this installment of At Issue, two of CiSE's editorial board members describe the magazine's current and future Web presence. We start with Bill Feiereisen's discussion of science on the Web and what it could mean for CiSE ("Are We There Yet?") and end with George Thiruvathukal's discussion of the challenges therein ("If We Build It, Will They Come?"). CiSE's official homepage is www.computer.org/cise; we gladly welcome comments with suggestions or feedback. You can contact lead editor (Jenny Stout; jstout@computer.org) or write to either Bill or George (their email addresses appear at the end of their respective essays).},
+abstract={In this installment of At Issue, two of CiSE's editorial board members describe the magazine's current and future Web presence. We start with Bill Feiereisen's discussion of science on the Web and what it could mean for CiSE ("Are We There Yet?") and end with George Thiruvathukal's discussion of the challenges therein ("If We Build It, Will They Come?"). CiSE's official homepage is www.computer.org/cise; we gladly welcome comments with suggestions or feedback. You can contact lead editor (Jenny Stout; jstout
+
+@computer.org) or write to either Bill or George (their email addresses appear at the end of their respective essays).},
 keywords={Web sites;Bioinformatics;Software;Blogs;Genomics;Scientific computing;computing;science;engineering;Web 2.0;Semantic Web;social networking;wikis;blogs;At Issue},
 doi={10.1109/MCSE.2008.49},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{1401797,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Guest Editors' Introduction: Cluster Computing},
@@ -908,6 +1184,8 @@ keywords={Computer networks;Hardware;Linux;Ethernet networks;High performance co
 doi={10.1109/MCSE.2005.33},
 ISSN={1558-366X},
 month={March},}
+
+
 @ARTICLE{8090467,
 author={L. A. {Barba} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Reproducible Research for Computing in Science Engineering},
@@ -920,6 +1198,8 @@ keywords={reproducible research;peer review;open access;scientific computing},
 doi={10.1109/MCSE.2017.3971172},
 ISSN={1558-366X},
 month={November},}
+
+
 @ARTICLE{7478508,
 author={T. {Barnes} and J. {Payton} and G. K. {Thiruvathukal} and K. E. {Boyer} and J. {Forbes}},
 journal={Computing in Science Engineering}, title={Best of RESPECT, Part 2},
@@ -932,6 +1212,8 @@ keywords={Special issues and sections;Meetings;Perception;Cultural differences;S
 doi={10.1109/MCSE.2016.51},
 ISSN={1558-366X},
 month={May},}
+
+
 @ARTICLE{6879727,
 author={M. {Parashar} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Extreme Data [Guest editors' introduction]},
@@ -944,6 +1226,8 @@ keywords={Special issues and sections;Big data;Distributed databases;Computation
 doi={10.1109/MCSE.2014.83},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{5678564,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Books [reviews of "Networks, Crowds, and Markets: Reasoning about a Highly-Connected World; Easley, D. and Kleinberg, J.; 2010 and "Introduction to High Performance Computing for Scientists and Engineers"; Hager, G. and Wellein, G.; 2011) [Book review]},
@@ -956,6 +1240,8 @@ keywords={Book reviews;Internet;Web and internet services;High performance compu
 doi={10.1109/MCSE.2011.3},
 ISSN={1558-366X},
 month={Jan},}
+
+
 @ARTICLE{5076314,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Introducing Computing Now},
@@ -968,6 +1254,8 @@ keywords={societies;Computing Now;editorial board members;IEEE Computer Society;
 doi={10.1109/MCSE.2009.124},
 ISSN={1558-366X},
 month={July},}
+
+
 @ARTICLE{1324553,
 author={G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Gentoo Linux: the next generation of Linux},
@@ -980,6 +1268,8 @@ keywords={Unix;software reviews;Gentoo Linux;Red Hat;Lindows;Debian;SuSe;Mandrak
 doi={10.1109/MCSE.2004.37},
 ISSN={1558-366X},
 month={Sep.},}
+
+
 @ARTICLE{1306951,
 author={G. K. {Thiruvathukal} and K. {Laufer}},
 journal={Computing in Science Engineering}, title={Plone and content management},
