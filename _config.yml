@@ -60,8 +60,8 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: my blog(ish)  # your blog must have a name for it to show up in the nav bar
+blog_description: this section is under construction - come back soon...
 permalink: /blog/:year/:title/
 
 # Pagination
