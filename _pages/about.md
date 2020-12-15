@@ -20,6 +20,8 @@ social: true
 Hi! I’m George K. Thiruvathukal.
 I’m professor of computer science at Loyola University Chicago and visiting faculty at Argonne National Laboratory.
 
+Looking for something? I'm still migrating so please check [My Old Site](https://old.thiruvathukal.com) if you cannot find it here.
+
 I earned the PhD and MS degrees in computer science from Illinois Institute of Technology in 1995 and 1990, respectively, and BA in computer science and physics (double major) with a mathematics minor from Lewis University in 1988.
 As a computer science major, I received the department's top computer science graduating student award and was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org>) Physics national honor society.
 
