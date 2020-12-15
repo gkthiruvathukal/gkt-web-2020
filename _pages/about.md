@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="https://luc.edu/gkthiriuvathukal">Professor, Loyola University Chicago</a> and <a href="#">Visiting Researcher, Argonne National Laboratory</a>
+description: <a href="https://luc.edu/gkthiruvathukal">Professor, Loyola University Chicago</a> and <a href="https://www.alcf.anl.gov/about/people/george-k-thiruvathukal">Visiting Researcher, Argonne National Laboratory</a>
 
 profile:
   align: right
