@@ -1,0 +1,14 @@
+sudo: false
+language: ruby
+addons:
+  apt:
+    packages:
+    - bundler
+
+before_script:
+  bundle install
+script:
+  - ./bin/cibuild
+after_success:
+  - echo "Hello World"
+  - ./bin/deploy
