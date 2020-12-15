@@ -1,7 +1,9 @@
 ---
 layout: post
 date: 2020-12-14 10:00:00-0400
-inline: true
+inline: false
+title: Site migration - back to Jekyll + al-folio
+
 ---
 
 It has been a great run with Sphinx for my web site.
@@ -11,4 +13,3 @@ I really like the [al-folio](https://github.com/alshedivat/al-folio) theme, whic
 It has a ninimal look, supports responsive themes, and (most importantly) allows me to focus on my published work and active research projects.
 
 Being able to do occasional news and blog postings is also a *big plus*.
-
