@@ -1,14 +1,22 @@
-sudo: false
 language: ruby
-addons:
-  apt:
-    packages:
-    - bundler
+cache: bundler
+#addons:
+#  apt:
+#    packages:
+#    - bundler
 
 before_script:
-  bundle install
+  - bundle install
 script:
-  - ./bin/cibuild
-after_success:
-  - echo "Hello World"
-  - ./bin/deploy.noninteractive
+  - bundle exec jekyll build --destination mysite
+deploy:
+  provider: pages
+  local-dir: ./mysite
+  target-branch: gh-pages
+  email: thiruvathukal@gmail.com
+  name: George K. Thiruvathukal-Deploy
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: false
+  #  on:
+  #    branch: release
