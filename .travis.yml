@@ -14,10 +14,10 @@ deploy:
   local-dir: ./mysite
   target-branch: gh-pages
   email: thiruvathukal@gmail.com
-  name: George K. Thiruvathukal-Deploy
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
+  fqdn: thiruvathukal.com
   on:
     branch: main
 
