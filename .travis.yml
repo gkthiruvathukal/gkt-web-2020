@@ -18,5 +18,5 @@ deploy:
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: false
-  #  on:
-  #    branch: release
+    on:
+      branch: main
