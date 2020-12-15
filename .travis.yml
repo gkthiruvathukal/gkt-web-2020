@@ -11,4 +11,4 @@ script:
   - ./bin/cibuild
 after_success:
   - echo "Hello World"
-  - ./bin/deploy
+  - ./bin/deploy.noninteractive
