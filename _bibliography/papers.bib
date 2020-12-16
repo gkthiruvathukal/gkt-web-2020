@@ -88,7 +88,7 @@ month={July},}
 
 @INPROCEEDINGS{GRS-Posters-4,
 abbr={Loyola},
-author = {Allan Miller and George Thiruvathukal and Konstantin Laufer and Emmanuel Amobi and Sean Higgins and Linette Maliakal and Emily Meister and Jean-Luc Putter and Alex Rose and Nicholas Synovic and Sophie Von Hatten and Jonathan Warkentin and Martin Zugschwert},
+author = {Allan Miller and George Thiruvathukal and Konstantin L"{a}ufer and Emmanuel Amobi and Sean Higgins and Linette Maliakal and Emily Meister and Jean-Luc Putter and Alex Rose and Nicholas Synovic and Sophie Von Hatten and Jonathan Warkentin and Martin Zugschwert},
 title = {Toward a containerized pipeline for longitudinal analysis of open-source software projects},
 booktitle = {Graduate Research Symposium 2020},
 abstract={Trust in open-source software is a cornerstone of scientific progress and a foundation of high-quality public services. Just as standards are integral when judging the efficacy of a novel pharmaceutical compound or determining the spread of a new disease, the software used to make those determinations should be useful, error-free, reliable, performant, and secure. A small bug in an application, library, or framework can lead to economic loss and even loss of life. We rely on software developers to be dynamic and responsive to user review and bug-reporting. Our team developed an open-source modular pipeline to perform empirical investigations of software quality. A key innovation of our approach is to look at projects “from a distance” similar to methods used in climate, e.g. satellite images being used to observe environmental impacts in air quality/rain forests. Instead of looking at language-specific source code features, our pipeline uses a language-agnostic high-level approach to track software quality by focusing on the development process itself, which yields great insight into the processes programmers use to write and maintain their software. Our distributed modular approach to analytics allows the pipeline to be easily extended to support additional metrics in future work. We store extracted data in an embedded SQLite database, which means that analysis can proceed without complex server setup, let alone hosting the software on dedicated servers. Our analytical modules are designed for efficiency, and future runs of our software only collect missing data, supporting the incremental analysis of known, important open-source projects.},
@@ -149,6 +149,62 @@ html={https://ecommons.luc.edu/cs_facpubs/240/},
 pdf={https://www.frontiersin.org/articles/10.3389/fncir.2020.00012/full}
 }
 
+
+
+@INPROCEEDINGS{9028394,
+abbr={IEEE Conference},
+selected={true},
+author={R. I. {Greenberg} and G. K. {Thiruvathukal}},
+booktitle={2019 IEEE Frontiers in Education Conference (FIE)}, title={Exercises Integrating High School Mathematics with Robot Motion Planning},
+year={2019},
+volume={},
+number={},
+pages={1-5},
+abstract={This Innovative Practice Work in Progress presents progress in developing exercises for high school students incorporating level-appropriate mathematics into robotics activities. We assume mathematical foundations ranging from algebra to precalculus, whereas most prior work on integrating mathematics into robotics uses only very elementary mathematical reasoning or, at the other extreme, is comprised of technical papers or books using calculus and other advanced mathematics. The exercises suggested are relevant to any differential-drive robot, which is an appropriate model for many different varieties of educational robots. They guide students towards comparing a variety of natural navigational strategies making use of typical movement primitives. The exercises align with Common Core State Standards for Mathematics.},
+keywords={computer aided instruction;educational institutions;educational robots;mathematics computing;mobile robots;path planning;differential-drive robot;educational robots;high school mathematics;level-appropriate mathematics;robot motion planning;Wheels;Mobile robots;Navigation;Robot kinematics;Mathematics;Sensors;Robotics;Computer science education;Mathematics of Computing},
+doi={10.1109/FIE43999.2019.9028394},
+html={http://ecommons.luc.edu/cs_facpubs/231},
+ISSN={2377-634X},
+month={Oct},}
+
+
+@inproceedings{10.1145/3337932.3338814,
+author = {L"{a}ufer, Konstantin and O'Sullivan, John and Thiruvathukal, George K.},
+title = {Tests as Maintainable Assets via Auto-Generated Spies: A Case Study Involving the Scala Collections Library's Iterator Trait},
+year = {2019},
+isbn = {9781450368247},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3337932.3338814},
+doi = {10.1145/3337932.3338814},
+abstract = {In testing stateful abstractions, it is often necessary to record interactions, such as method invocations, and express assertions over these interactions. Following the Test Spy design pattern, we can reify such interactions programmatically through additional mutable state. Alternatively, a mocking framework, such as Mockito, can automatically generate test spies that allow us to record the interactions and express our expectations in a declarative domain-specific language. According to our study of the test code for Scala's Iterator trait, the latter approach can lead to a significant reduction of test code complexity in terms of metrics such as code size (in some cases over 70% smaller), cyclomatic complexity, and amount of additional mutable state required. In this tools paper, we argue that the resulting test code is not only more maintainable, readable, and intentional, but also a better stylistic match for the Scala community than manually implemented, explicitly stateful test spies.},
+booktitle = {Proceedings of the Tenth ACM SIGPLAN Symposium on Scala},
+pages = {17–21},
+numpages = {5},
+keywords = {automated unit testing, test code metrics, stream processing, spy-based testing, mock-based testing, prefix sum, iterator design pattern, test code complexity},
+location = {London, United Kingdom},
+series = {Scala '19},
+html={http://ecommons.luc.edu/cs_facpubs/230
+}
+}
+
+http://ecommons.luc.edu/cs_facpubs/229
+http://ecommons.luc.edu/cs_facpubs/219
+http://ecommons.luc.edu/cs_facpubs/214
+http://ecommons.luc.edu/cs_facpubs/216
+http://ecommons.luc.edu/cs_facpubs/213
+http://ecommons.luc.edu/cs_facpubs/207
+http://ecommons.luc.edu/cs_facpubs/210
+http://ecommons.luc.edu/cs_facpubs/211
+http://ecommons.luc.edu/cs_facpubs/212
+http://ecommons.luc.edu/cs_facpubs/218
+http://ecommons.luc.edu/cs_facpubs/208
+http://ecommons.luc.edu/cs_facpubs/215
+http://ecommons.luc.edu/cs_facpubs/233
+http://ecommons.luc.edu/cs_facpubs/217
+
+
+
 @inproceedings{ParCo2019,
   abbr            = {ParCo},
   author          = {Dario Dematties and George K. Thiruvathukal and Silvio Rizzi and Alejandro Wainselboim and B. Silvano Zanutto},
@@ -157,7 +213,8 @@ pdf={https://www.frontiersin.org/articles/10.3389/fncir.2020.00012/full}
   pages           = {497-506},
   editor          = {Ian Foster and Gerhard R. Joubert and Luděk Kučera and Wolfgang E. Nagel and Frans Peter},
   year            = {2020},
-  html            = {https://ecommons.luc.edu/cs_facpubs/242/}
+  html            = {https://ecommons.luc.edu/cs_facpubs/242/},
+  abstract = {The interdisciplinary field of neuroscience has made significantprogress in recent decades, providing the scientific community in gen-eral with a new level of understanding on how the brain works beyondthe  store-and-fire  model  found  in  traditional  neural  networks.  Mean-while,  Machine  Learning  (ML)  based  on  established  models  has  seena  surge  of  interest  in  the  High  Performance  Computing  (HPC)  com-munity,  especially  through  the  use  of  high-end  accelerators,  such  asGraphical  Processing  Units  (GPUs),  including  HPC  clusters  of  same.In our work, we are motivated to exploit these high-performance com-puting  developments  and  understand  the  scaling  challenges  for  new–biologically inspired–learning models on leadership-class HPC resources.These  emerging  models  feature  sparse  and  random  connectivity  pro-files  that  map  to  more  loosely-coupled  parallel  architectures  with  alarge number of CPU cores per node. Contrasted with traditional MLcodes, these methods exploit loosely-coupled sparse data structures asopposed  to  tightly-coupled  dense  matrix  computations,  which  benefitfrom SIMD-style parallelism found on GPUs. In this paper we introducea hybrid Message Passing Interface (MPI) and Open Multi-Processing(OpenMP) parallelization scheme to accelerate and scale our computa-tional model based on the dynamics of cortical tissue. We ran compu-tational tests on a leadership class visualization and analysis cluster atArgonne National Laboratory. We include a study of strong and weakscaling, where we obtained parallel efficiency measures with a minimumabove 87% and a maximum above 97% for simulations of our biologicallyinspired neural network on up to 64 computing nodes running 8 threadseach. This study shows promise of the MPI+OpenMP hybrid approachto support flexible and biologically-inspired computational experimen-tal scenarios. In addition, we present the viability in the application ofthese strategies in high-end leadership computers in the future.}
 }
 
 
@@ -227,22 +284,6 @@ ISSN={},
 html={http://ecommons.luc.edu/cs_facpubs/243},
 month={April},}
 
-
-
-@INPROCEEDINGS{9028394,
-abbr={IEEE Conference},
-selected={true},
-author={R. I. {Greenberg} and G. K. {Thiruvathukal}},
-booktitle={2019 IEEE Frontiers in Education Conference (FIE)}, title={Exercises Integrating High School Mathematics with Robot Motion Planning},
-year={2019},
-volume={},
-number={},
-pages={1-5},
-abstract={This Innovative Practice Work in Progress presents progress in developing exercises for high school students incorporating level-appropriate mathematics into robotics activities. We assume mathematical foundations ranging from algebra to precalculus, whereas most prior work on integrating mathematics into robotics uses only very elementary mathematical reasoning or, at the other extreme, is comprised of technical papers or books using calculus and other advanced mathematics. The exercises suggested are relevant to any differential-drive robot, which is an appropriate model for many different varieties of educational robots. They guide students towards comparing a variety of natural navigational strategies making use of typical movement primitives. The exercises align with Common Core State Standards for Mathematics.},
-keywords={computer aided instruction;educational institutions;educational robots;mathematics computing;mobile robots;path planning;differential-drive robot;educational robots;high school mathematics;level-appropriate mathematics;robot motion planning;Wheels;Mobile robots;Navigation;Robot kinematics;Mathematics;Sensors;Robotics;Computer science education;Mathematics of Computing},
-doi={10.1109/FIE43999.2019.9028394},
-ISSN={2377-634X},
-month={Oct},}
 
 
 @ARTICLE{8848161,
@@ -584,7 +625,7 @@ month={May},}
 
 @ARTICLE{5999784,
   abbr={IEEE Magazine},
-author={K. {Laufer} and G. K. {Thiruvathukal} and D. {Dennis}},
+author={K. {L"{a}ufer} and G. K. {Thiruvathukal} and D. {Dennis}},
 journal={Computing in Science Engineering}, title={Moving Academic Department Functions to Social Networks and Clouds: Initial Experiences},
 year={2011},
 volume={13},
@@ -596,6 +637,22 @@ doi={10.1109/MCSE.2011.85},
 ISSN={1558-366X},
 month={Sep.},}
 
+@inproceedings{10.1145/1967428.1967439,
+author = {Kaylor, Joe and L\"{a}ufer, Konstantin and Thiruvathukal, George K.},
+title = {RestFS: Resources and Services Are Filesystems, Too},
+year = {2011},
+isbn = {9781450306232},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1967428.1967439},
+doi = {10.1145/1967428.1967439},
+abstract = {We have designed and implemented RestFS, a software framework that provides a uniform, configurable connector layer for mapping remote web-based resources to local filesystem-based resources, recognizing the similarity between these two types of resources. Such mappings enable programmatic access to a resource, as well as composition of two or more resources, through the local operating system's standard filesystem application programming interface (API), scriptable file-based command-line utilities, and inter-process communication (IPC) mechanisms. The framework supports automatic and manual authentication. We include several examples intended to show the utility and practicality of our framework.},
+booktitle = {Proceedings of the Second International Workshop on RESTful Design},
+pages = {39–46},
+numpages = {8},
+location = {Hyderabad, India},
+series = {WS-REST '11}
+}
 
 @INPROCEEDINGS{5612094,
   abbr={IEEE Conference},
@@ -644,7 +701,7 @@ month={Nov},}
 
 @ARTICLE{5228719,
   abbr={IEEE Magazine},
-author={K. {Laufer} and G. K. {Thiruvathukal}},
+author={K. {L\"{a}ufer} and G. K. {Thiruvathukal}},
 journal={Computing in Science Engineering}, title={Scientific Programming: The Promises of Typed, Pure, and Lazy Functional Programming: Part II},
 year={2009},
 volume={11},
@@ -703,7 +760,7 @@ month={Nov},}
 
 @INPROCEEDINGS{4554352,
   abbr={IEEE Conference},
-author={M. {Bone} and P. F. {Nabicht} and K. {Laufer} and G. K. {Thiruvathukal}},
+author={M. {Bone} and P. F. {Nabicht} and K. {L"{a}ufer} and G. K. {Thiruvathukal}},
 booktitle={2008 IEEE International Conference on Electro/Information Technology}, title={Taming XML: Objects first, then markup},
 year={2008},
 volume={},
@@ -733,7 +790,7 @@ month={March},}
 
 @INPROCEEDINGS{4228151,
   abbr={IEEE Conbference},
-author={N. {Mehta} and Y. {Kanitkar} and K. {Laufer} and G. K. {Thiruvathukal}},
+author={N. {Mehta} and Y. {Kanitkar} and K. {L"{a}ufer} and G. K. {Thiruvathukal}},
 booktitle={2007 IEEE International Parallel and Distributed Processing Symposium}, title={A Model-Driven Approach to Job/Task Composition in Cluster Computing},
 year={2007},
 volume={},
@@ -763,7 +820,7 @@ month={March},}
 
 @ARTICLE{4052528,
   abbr={IEEE Magazine},
-author={K. {Laufer} and G. K. {Thiruvathukal} and B. {Gonzalez}},
+author={K. {L"{a}ufer} and G. K. {Thiruvathukal} and B. {Gonzalez}},
 journal={Computing in Science Engineering}, title={A Hike through a Post-EJB J2EE Web Application Architecture, Part III},
 year={2007},
 volume={9},
@@ -778,7 +835,7 @@ month={Jan},}
 
 @ARTICLE{1717321,
   abbr={IEEE Magazine},
-author={G. K. {Thiruvathukal} and K. {Laufer} and B. {Gonzalez}},
+author={G. K. {Thiruvathukal} and K. {L"{a}ufer} and B. {Gonzalez}},
 journal={Computing in Science Engineering}, title={Unit Testing Considered Useful},
 year={2006},
 volume={8},
@@ -1333,7 +1390,7 @@ month={Sep.},}
 
 
 @ARTICLE{1306951,
-author={G. K. {Thiruvathukal} and K. {Laufer}},
+author={G. K. {Thiruvathukal} and K. {L"{a}ufer}},
 journal={Computing in Science Engineering}, title={Plone and content management},
 year={2004},
 volume={6},
