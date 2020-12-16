@@ -1,212 +1,435 @@
 @INPROCEEDINGS{9190851,
-abbr={IEEE Conference},
-author={S. {Aghajanzadeh} and R. {Naidu} and S. -H. {Chen} and C. {Tung} and A. {Goel} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
-booktitle={2020 IEEE International Conference on Image Processing (ICIP)}, title={Camera Placement Meeting Restrictions of Computer Vision},
-year={2020},
-volume={},
-number={},
-pages={3254-3258},
-abstract={In the blooming era of smart edge devices, surveillance cameras have been deployed in many locations. Surveillance cameras are most useful when they are spaced out to maximize coverage of an area. However, deciding where to place cameras is an NP-hard problem and researchers have proposed heuristic solutions. Existing work does not consider a significant restriction of computer vision: in order to track a moving object, the object must occupy enough pixels. The number of pixels depends on many factors (How far away is the object? What is the camera resolution? What is the focal length?). In this study, we propose a camera placement method that identifies effective camera placement in arbitrary spaces and can account for different camera types as well. Our strategy represents spaces as polygons, then uses a greedy algorithm to partition the polygons and determine the cameras’ locations to provide the desired coverage. Our solution also makes it possible to perform object tracking via overlapping camera placement. Our method is evaluated against complex shapes and real-world museum floor plans, achieving up to 85% coverage and 25% overlap.},
-keywords={Cameras;Computer vision;Surveillance;Shape;Object tracking;NP-hard problem;Security;Computational Geometry;Computer Vision;Camera Placement},
-doi={10.1109/ICIP40778.2020.9190851},
-ISSN={2381-8549},
-html={http://ecommons.luc.edu/cs_facpubs/250},
-month={Oct},}
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/250},
+  pdf={http://ecommons.luc.edu/cs_facpubs/250},
+  author={S. {Aghajanzadeh} and R. {Naidu} and S. -H. {Chen} and C. {Tung} and A. {Goel} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)}, title={Camera Placement Meeting Restrictions of Computer Vision},
+  year={2020},
+  volume={},
+  number={},
+  pages={3254-3258},
+  abstract={In the blooming era of smart edge devices, surveillance cameras have been deployed in many locations. Surveillance cameras are most useful when they are spaced out to maximize coverage of an area. However, deciding where to place cameras is an NP-hard problem and researchers have proposed heuristic solutions. Existing work does not consider a significant restriction of computer vision: in order to track a moving object, the object must occupy enough pixels. The number of pixels depends on many factors (How far away is the object? What is the camera resolution? What is the focal length?). In this study, we propose a camera placement method that identifies effective camera placement in arbitrary spaces and can account for different camera types as well. Our strategy represents spaces as polygons, then uses a greedy algorithm to partition the polygons and determine the cameras’ locations to provide the desired coverage. Our solution also makes it possible to perform object tracking via overlapping camera placement. Our method is evaluated against complex shapes and real-world museum floor plans, achieving up to 85% coverage and 25% overlap.},
+  keywords={Cameras;Computer vision;Surveillance;Shape;Object tracking;NP-hard problem;Security;Computational Geometry;Computer Vision;Camera Placement},
+  doi={10.1109/ICIP40778.2020.9190851},
+  ISSN={2381-8549},
+  month={Oct},
+}
 
 
 @article{10.1145/3408062,
-abbr={ACM Journal},
-author = {Goel, Abhinav and Aghajanzadeh, Sara and Tung, Caleb and Chen, Shuo-Han and Thiruvathukal, George K. and Lu, Yung-Hsiang},
-title = {Modular Neural Networks for Low-Power Image Classification on Embedded Devices},
-year = {2020},
-issue_date = {October 2020},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {26},
-number = {1},
-issn = {1084-4309},
-url = {https://doi.org/10.1145/3408062},
-doi = {10.1145/3408062},
-abstract = {Embedded devices are generally small, battery-powered computers with limited hardware resources. It is difficult to run deep neural networks (DNNs) on these devices, because DNNs perform millions of operations and consume significant amounts of energy. Prior research has shown that a considerable number of a DNN’s memory accesses and computation are redundant when performing tasks like image classification. To reduce this redundancy and thereby reduce the energy consumption of DNNs, we introduce the Modular Neural Network Tree architecture. Instead of using one large DNN for the classifier, this architecture uses multiple smaller DNNs (called modules) to progressively classify images into groups of categories based on a novel visual similarity metric. Once a group of categories is selected by a module, another module then continues to distinguish among the similar categories within the selected group. This process is repeated over multiple modules until we are left with a single category. The computation needed to distinguish dissimilar groups is avoided, thus reducing redundant operations, memory accesses, and energy. Experimental results using several image datasets reveal the effectiveness of our proposed solution to reduce memory requirements by 50% to 99%, inference time by 55% to 95%, energy consumption by 52% to 94%, and the number of operations by 15% to 99% when compared with existing DNN architectures, running on two different embedded systems: Raspberry Pi 3 and Raspberry Pi Zero.},
-journal = {ACM Trans. Des. Autom. Electron. Syst.},
-month = oct,
-articleno = {1},
-numpages = {35},
-html={http://ecommons.luc.edu/cs_facpubs/254},
-keywords = {image classification, Low-power}
+  abbr={ACM Journal},
+  html={http://ecommons.luc.edu/cs_facpubs/254},
+  pdf={http://ecommons.luc.edu/cs_facpubs/254},
+  author = {Goel, Abhinav and Aghajanzadeh, Sara and Tung, Caleb and Chen, Shuo-Han and Thiruvathukal, George K. and Lu, Yung-Hsiang},
+  title = {Modular Neural Networks for Low-Power Image Classification on Embedded Devices},
+  year = {2020},
+  issue_date = {October 2020},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {26},
+  number = {1},
+  issn = {1084-4309},
+  url = {https://doi.org/10.1145/3408062},
+  doi = {10.1145/3408062},
+  abstract = {Embedded devices are generally small, battery-powered computers with limited hardware resources. It is difficult to run deep neural networks (DNNs) on these devices, because DNNs perform millions of operations and consume significant amounts of energy. Prior research has shown that a considerable number of a DNN’s memory accesses and computation are redundant when performing tasks like image classification. To reduce this redundancy and thereby reduce the energy consumption of DNNs, we introduce the Modular Neural Network Tree architecture. Instead of using one large DNN for the classifier, this architecture uses multiple smaller DNNs (called modules) to progressively classify images into groups of categories based on a novel visual similarity metric. Once a group of categories is selected by a module, another module then continues to distinguish among the similar categories within the selected group. This process is repeated over multiple modules until we are left with a single category. The computation needed to distinguish dissimilar groups is avoided, thus reducing redundant operations, memory accesses, and energy. Experimental results using several image datasets reveal the effectiveness of our proposed solution to reduce memory requirements by 50% to 99%, inference time by 55% to 95%, energy consumption by 52% to 94%, and the number of operations by 15% to 99% when compared with existing DNN architectures, running on two different embedded systems: Raspberry Pi 3 and Raspberry Pi Zero.},
+  journal = {ACM Trans. Des. Autom. Electron. Syst.},
+  month = oct,
+  articleno = {1},
+  numpages = {35},
+  keywords = {image classification, Low-power}
 }
 
 
 @inproceedings{10.1145/3370748.3406569,
-abbr={IEEE Conference},
-author = {Goel, Abhinav and Tung, Caleb and Aghajanzadeh, Sara and Ghodgaonkar, Isha and Ghosh, Shreya and Thiruvathukal, George K. and Lu, Yung-Hsiang},
-title = {Low-Power Object Counting with Hierarchical Neural Networks},
-year = {2020},
-isbn = {9781450370530},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3370748.3406569},
-doi = {10.1145/3370748.3406569},
-abstract = {Deep Neural Networks (DNNs) achieve state-of-the-art accuracy in many computer vision tasks, such as object counting. Object counting takes two inputs: an image and an object query and reports the number of occurrences of the queried object. To achieve high accuracy, DNNs require billions of operations, making them difficult to deploy on resource-constrained, low-power devices. Prior work shows that a significant number of DNN operations are redundant and can be eliminated without affecting the accuracy. To reduce these redundancies, we propose a hierarchical DNN architecture for object counting. This architecture uses a Region Proposal Network (RPN) to propose regions-of-interest (RoIs) that may contain the queried objects. A hierarchical classifier then efficiently finds the RoIs that actually contain the queried objects. The hierarchy contains groups of visually similar object categories. Small DNNs at each node of the hierarchy classify between these groups. The RoIs are incrementally processed by the hierarchical classifier. If the object in an RoI is in the same group as the queried object, then the next DNN in the hierarchy processes the RoI further; otherwise, the RoI is discarded. By using a few small DNNs to process each image, this method reduces the memory requirement, inference time, energy consumption, and number of operations with negligible accuracy loss when compared with the existing techniques.},
-booktitle = {Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design},
-pages = {163168},
-numpages = {6},
-keywords = {object counting, neural networks, low-power},
-location = {Boston, Massachusetts},
-html={http://ecommons.luc.edu/cs_facpubs/252},
-series = {ISLPED '20}
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/252},
+  pdf={http://ecommons.luc.edu/cs_facpubs/252},
+  author = {Goel, Abhinav and Tung, Caleb and Aghajanzadeh, Sara and Ghodgaonkar, Isha and Ghosh, Shreya and Thiruvathukal, George K. and Lu, Yung-Hsiang},
+  title = {Low-Power Object Counting with Hierarchical Neural Networks},
+  year = {2020},
+  isbn = {9781450370530},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3370748.3406569},
+  doi = {10.1145/3370748.3406569},
+  abstract = {Deep Neural Networks (DNNs) achieve state-of-the-art accuracy in many computer vision tasks, such as object counting. Object counting takes two inputs: an image and an object query and reports the number of occurrences of the queried object. To achieve high accuracy, DNNs require billions of operations, making them difficult to deploy on resource-constrained, low-power devices. Prior work shows that a significant number of DNN operations are redundant and can be eliminated without affecting the accuracy. To reduce these redundancies, we propose a hierarchical DNN architecture for object counting. This architecture uses a Region Proposal Network (RPN) to propose regions-of-interest (RoIs) that may contain the queried objects. A hierarchical classifier then efficiently finds the RoIs that actually contain the queried objects. The hierarchy contains groups of visually similar object categories. Small DNNs at each node of the hierarchy classify between these groups. The RoIs are incrementally processed by the hierarchical classifier. If the object in an RoI is in the same group as the queried object, then the next DNN in the hierarchy processes the RoI further; otherwise, the RoI is discarded. By using a few small DNNs to process each image, this method reduces the memory requirement, inference time, energy consumption, and number of operations with negligible accuracy loss when compared with the existing techniques.},
+  booktitle = {Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design},
+  pages = {163168},
+  numpages = {6},
+  keywords = {object counting, neural networks, low-power},
+  location = {Boston, Massachusetts},
+  series = {ISLPED '20}
 }
 
 @article{Dematties2020,
-abbr={Lecture},
-author = {Dario Dematties and Silvio Rizzi and George K. Thiruvathukal},
-title = "{Towards High-End Scalability on Bio-Inspired Computational Models}",
-year = "2020",
-month = "8",
-url = "https://figshare.com/articles/presentation/Towards_High-End_Scalability_on_Bio-Inspired_Computational_Models/12762260",
-doi = "10.6084/m9.figshare.12762260.v2",
-abstract = {Presentation at CyberColombia's Third HPC Summer School: Bio and Data Science Part 1 describes our work on developing a neurocomputational model inspired in specific features found in the mammalian cortex. Part 2 describes our software development efforts to build an HPC version of our work aimed at scalability on leadership class supercomputers, including a discussion of our strong and weak scaling results to date. Part 3 describes our efforts with software engineering and reproducibilty with a discussion of best practices for working with open source and hosting code, datasets, and analyses.},
-html = {https://ecommons.luc.edu/cs_facpubs/253/}
+  abbr={Lecture},
+  html = {https://ecommons.luc.edu/cs_facpubs/253/},
+  pdf = {https://ecommons.luc.edu/cs_facpubs/253/},
+  author = {Dario Dematties and Silvio Rizzi and George K. Thiruvathukal},
+  title = "{Towards High-End Scalability on Bio-Inspired Computational Models}",
+  year = "2020",
+  month = "8",
+  url = "https://figshare.com/articles/presentation/Towards_High-End_Scalability_on_Bio-Inspired_Computational_Models/12762260",
+  doi = "10.6084/m9.figshare.12762260.v2",
+  abstract = {Presentation at CyberColombia's Third HPC Summer School: Bio and Data Science Part 1 describes our work on developing a neurocomputational model inspired in specific features found in the mammalian cortex. Part 2 describes our software development efforts to build an HPC version of our work aimed at scalability on leadership class supercomputers, including a discussion of our strong and weak scaling results to date. Part 3 describes our efforts with software engineering and reproducibilty with a discussion of best practices for working with open source and hosting code, datasets, and analyses.},
 }
 
 @INPROCEEDINGS{9202837,
-abbr={IEEE Conference},
-author={A. {Chakraborty} and A. {Pawar} and H. {Jang} and S. {Huang} and S. {Mishra} and S. -H. {Chen} and Y. -H. {Chang} and G. K. {Thiruvathukal} and Y. -H. {Lu}},
-booktitle={2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)}, title={A Real-Time Feature Indexing System on Live Video Streams},
-year={2020},
-volume={},
-number={},
-pages={42-50},
-abstract={Most of the existing video storage systems rely on offline processing to support the feature-based indexing on video streams. The feature-based indexing technique provides an effective way for users to search video content through visual features, such as object categories (e.g., cars and persons). However, due to the reliance on offline processing, video streams along with their captured features cannot be searchable immediately after video streams are recorded. According to our investigation, buffering and storing live video steams are more time-consuming than the YOLO v3 object detector. Such observation motivates us to propose a real-time feature indexing (RTFI) system to enable instantaneous feature-based indexing on live video streams after video streams are captured and processed through object detectors. RTFI achieves its real-time goal via incorporating the novel design of metadata structure and data placement, the capability of modern object detector (i.e., YOLO v3), and the deduplication techniques to avoid storing repetitive video content. Notably, RTFI is the first system design for realizing real-time feature-based indexing on live video streams. RTFI is implemented on a Linux server and can improve the system throughput by upto 10.60x, compared with the base system without the proposed design. In addition, RTFI is able to make the video content searchable within 20 milliseconds for 10 live video streams after the video content is received by the proposed system, excluding the network transfer latency.},
-keywords={feature extraction;indexing;Linux;meta data;object detection;storage management;video signal processing;video streaming;RTFI;base system;video content search;real-time feature indexing system;offline processing;visual features;video storage systems;real-time feature-based indexing technique;YOLO v3 object detector;live video streams capture;metadata structure;data placement;deduplication techniques;repetitive video content storage;Linux server;network transfer latency;Streaming media;Indexing;Detectors;Feature extraction;Object detection;Real-time systems;Automobiles;object detection;data storage;real-time;feature-bassed indexing},
-doi={10.1109/COMPSAC48688.2020.00016},
-html={http://ecommons.luc.edu/cs_facpubs/249},
-ISSN={0730-3157},
-month={July},}
-
-
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/249},
+  pdf={http://ecommons.luc.edu/cs_facpubs/249},
+  author={A. {Chakraborty} and A. {Pawar} and H. {Jang} and S. {Huang} and S. {Mishra} and S. -H. {Chen} and Y. -H. {Chang} and G. K. {Thiruvathukal} and Y.-H. {Lu}},
+  booktitle={2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)}, title={A Real-Time Feature Indexing System on Live Video Streams},
+  year={2020},
+  volume={},
+  number={},
+  pages={42-50},
+  abstract={Most of the existing video storage systems rely on offline processing to support the feature-based indexing on video streams. The feature-based indexing technique provides an effective way for users to search video content through visual features, such as object categories (e.g., cars and persons). However, due to the reliance on offline processing, video streams along with their captured features cannot be searchable immediately after video streams are recorded. According to our investigation, buffering and storing live video steams are more time-consuming than the YOLO v3 object detector. Such observation motivates us to propose a real-time feature indexing (RTFI) system to enable instantaneous feature-based indexing on live video streams after video streams are captured and processed through object detectors. RTFI achieves its real-time goal via incorporating the novel design of metadata structure and data placement, the capability of modern object detector (i.e., YOLO v3), and the deduplication techniques to avoid storing repetitive video content. Notably, RTFI is the first system design for realizing real-time feature-based indexing on live video streams. RTFI is implemented on a Linux server and can improve the system throughput by upto 10.60x, compared with the base system without the proposed design. In addition, RTFI is able to make the video content searchable within 20 milliseconds for 10 live video streams after the video content is received by the proposed system, excluding the network transfer latency.},
+  keywords={feature extraction;indexing;Linux;meta data;object detection;storage management;video signal processing;video streaming;RTFI;base system;video content search;real-time feature indexing system;offline processing;visual features;video storage systems;real-time feature-based indexing technique;YOLO v3 object detector;live video streams capture;metadata structure;data placement;deduplication techniques;repetitive video content storage;Linux server;network transfer latency;Streaming media;Indexing;Detectors;Feature extraction;Object detection;Real-time systems;Automobiles;object detection;data storage;real-time;feature-bassed indexing},
+  doi={10.1109/COMPSAC48688.2020.00016},
+  ISSN={0730-3157},
+  month={July},
+}
 
 @INPROCEEDINGS{GRS-Posters-4,
-abbr={Loyola},
-author = {Allan Miller and George Thiruvathukal and Konstantin L"{a}ufer and Emmanuel Amobi and Sean Higgins and Linette Maliakal and Emily Meister and Jean-Luc Putter and Alex Rose and Nicholas Synovic and Sophie Von Hatten and Jonathan Warkentin and Martin Zugschwert},
-title = {Toward a containerized pipeline for longitudinal analysis of open-source software projects},
-booktitle = {Graduate Research Symposium 2020},
-abstract={Trust in open-source software is a cornerstone of scientific progress and a foundation of high-quality public services. Just as standards are integral when judging the efficacy of a novel pharmaceutical compound or determining the spread of a new disease, the software used to make those determinations should be useful, error-free, reliable, performant, and secure. A small bug in an application, library, or framework can lead to economic loss and even loss of life. We rely on software developers to be dynamic and responsive to user review and bug-reporting. Our team developed an open-source modular pipeline to perform empirical investigations of software quality. A key innovation of our approach is to look at projects “from a distance” similar to methods used in climate, e.g. satellite images being used to observe environmental impacts in air quality/rain forests. Instead of looking at language-specific source code features, our pipeline uses a language-agnostic high-level approach to track software quality by focusing on the development process itself, which yields great insight into the processes programmers use to write and maintain their software. Our distributed modular approach to analytics allows the pipeline to be easily extended to support additional metrics in future work. We store extracted data in an embedded SQLite database, which means that analysis can proceed without complex server setup, let alone hosting the software on dedicated servers. Our analytical modules are designed for efficiency, and future runs of our software only collect missing data, supporting the incremental analysis of known, important open-source projects.},
-year={2020},
-html={http://ecommons.luc.edu/grs/2020/posters/4}
+  abbr={Loyola},
+  html={http://ecommons.luc.edu/grs/2020/posters/4},
+  pdf={http://ecommons.luc.edu/grs/2020/posters/4},
+  author = {Allan Miller and George Thiruvathukal and Konstantin L"{a}ufer and Emmanuel Amobi and Sean Higgins and Linette Maliakal and Emily Meister and Jean-Luc Putter and Alex Rose and Nicholas Synovic and Sophie Von Hatten and Jonathan Warkentin and Martin Zugschwert},
+  title = {Toward a containerized pipeline for longitudinal analysis of open-source software projects},
+  booktitle = {Graduate Research Symposium 2020},
+  abstract={Trust in open-source software is a cornerstone of scientific progress and a foundation of high-quality public services. Just as standards are integral when judging the efficacy of a novel pharmaceutical compound or determining the spread of a new disease, the software used to make those determinations should be useful, error-free, reliable, performant, and secure. A small bug in an application, library, or framework can lead to economic loss and even loss of life. We rely on software developers to be dynamic and responsive to user review and bug-reporting. Our team developed an open-source modular pipeline to perform empirical investigations of software quality. A key innovation of our approach is to look at projects “from a distance” similar to methods used in climate, e.g. satellite images being used to observe environmental impacts in air quality/rain forests. Instead of looking at language-specific source code features, our pipeline uses a language-agnostic high-level approach to track software quality by focusing on the development process itself, which yields great insight into the processes programmers use to write and maintain their software. Our distributed modular approach to analytics allows the pipeline to be easily extended to support additional metrics in future work. We store extracted data in an embedded SQLite database, which means that analysis can proceed without complex server setup, let alone hosting the software on dedicated servers. Our analytical modules are designed for efficiency, and future runs of our software only collect missing data, supporting the incremental analysis of known, important open-source projects.},
+  year={2020},
 }
 
 
 @article{ecommons-251,
   abbr={Book Chapter},
-author = {Sara Aghajanzadeh and Andrew T. Jebb and Yifan Li and Yung-Hsiang Lu and George K. Thiruvathukal},
-title = "{Observing Human Behavior Through Worldwide Network Cameras}",
-year = "2020",
-month = "6",
-doi = "10.1037/0000193-006",
-abstract = {This chapter presents an overview of the opportunities from video data available in worldwide network cameras and a research tool, called CAM² (Continuous Analysis of Many CAMeras), for obtaining and analyzing visual data at a large scale. It starts by providing an overview of computer technologies for analyzing human behaviors from video data, followed by a discussion of how various human behaviors are classified and the challenges in creating analysis software. The chapter uses several examples as sources of data (i.e., network cameras) from which it would be possible to observe human behaviors. It then introduces a software infrastructure built at Purdue University, called CAM², as a general-purpose computing platform for retrieving and analyzing visual data from many sources across the globe. Behavioral researchers use video cameras to capture contextual information, human facial and body information, and social interactions.},
-html = {https://ecommons.luc.edu/cs_facpubs/251/}
+  author = {Sara Aghajanzadeh and Andrew T. Jebb and Yifan Li and Yung-Hsiang Lu and George K. Thiruvathukal},
+  title = "{Observing Human Behavior Through Worldwide Network Cameras}",
+  year = "2020",
+  month = "6",
+  doi = "10.1037/0000193-006",
+  abstract = {This chapter presents an overview of the opportunities from video data available in worldwide network cameras and a research tool, called CAM² (Continuous Analysis of Many CAMeras), for obtaining and analyzing visual data at a large scale. It starts by providing an overview of computer technologies for analyzing human behaviors from video data, followed by a discussion of how various human behaviors are classified and the challenges in creating analysis software. The chapter uses several examples as sources of data (i.e., network cameras) from which it would be possible to observe human behaviors. It then introduces a software infrastructure built at Purdue University, called CAM², as a general-purpose computing platform for retrieving and analyzing visual data from many sources across the globe. Behavioral researchers use video cameras to capture contextual information, human facial and body information, and social interactions.},
+  html = {https://ecommons.luc.edu/cs_facpubs/251/}
 }
 
 @misc{ghodgaonkar2020observing,
   abbr={Tech Report},
-      title={Observing Responses to the COVID-19 Pandemic using Worldwide Network Cameras}, 
-      author={Isha Ghodgaonkar and Abhinav Goel and Fischer Bordwell and Caleb Tung and Sara Aghajanzadeh and Noah Curran and Ryan Chen and Kaiwen Yu and Sneha Mahapatra and Vishnu Banna and Gore Kao and Kate Lee and Xiao Hu and Nick Eliopolous and Akhil Chinnakotla and Damini Rijhwani and Ashley Kim and Aditya Chakraborty and Mark Daniel Ward and Yung-Hsiang Lu and George K. Thiruvathukal},
-      year={2020},
-      eprint={2005.09091},
-      archivePrefix={arXiv},
-      primaryClass={cs.CY},
-      abstract={COVID-19 has resulted in a worldwide pandemic, leading to "lockdown" policies and social distancing. The pandemic has profoundly changed the world. Traditional methods for observing these historical events are difficult because sending reporters to areas with many infected people can put the reporters' lives in danger. New technologies are needed for safely observing responses to these policies. This paper reports using thousands of network cameras deployed worldwide for the purpose of witnessing activities in response to the policies. The network cameras can continuously provide real-time visual data (image and video) without human efforts. Thus, network cameras can be utilized to observe activities without risking the lives of reporters. This paper describes a project that uses network cameras to observe responses to governments' policies during the COVID-19 pandemic (March to April in 2020). The project discovers over 30,000 network cameras deployed in 110 countries. A set of computer tools are created to collect visual data from network cameras continuously during the pandemic. This paper describes the methods to discover network cameras on the Internet, the methods to collect and manage data, and preliminary results of data analysis. This project can be the foundation for observing the possible "second wave" in fall 2020. The data may be used for post-pandemic analysis by sociologists, public health experts, and meteorologists.
+  title={Observing Responses to the COVID-19 Pandemic using Worldwide Network Cameras}, 
+  author={Isha Ghodgaonkar and Abhinav Goel and Fischer Bordwell and Caleb Tung and Sara Aghajanzadeh and Noah Curran and Ryan Chen and Kaiwen Yu and Sneha Mahapatra and Vishnu Banna and Gore Kao and Kate Lee and Xiao Hu and Nick Eliopolous and Akhil Chinnakotla and Damini Rijhwani and Ashley Kim and Aditya Chakraborty and Mark Daniel Ward and Yung-Hsiang Lu and George K. Thiruvathukal},
+  year={2020},
+  eprint={2005.09091},
+  archivePrefix={arXiv},
+  primaryClass={cs.CY},
+  abstract={COVID-19 has resulted in a worldwide pandemic, leading to "lockdown" policies and social distancing. The pandemic has profoundly changed the world. Traditional methods for observing these historical events are difficult because sending reporters to areas with many infected people can put the reporters' lives in danger. New technologies are needed for safely observing responses to these policies. This paper reports using thousands of network cameras deployed worldwide for the purpose of witnessing activities in response to the policies. The network cameras can continuously provide real-time visual data (image and video) without human efforts. Thus, network cameras can be utilized to observe activities without risking the lives of reporters. This paper describes a project that uses network cameras to observe responses to governments' policies during the COVID-19 pandemic (March to April in 2020). The project discovers over 30,000 network cameras deployed in 110 countries. A set of computer tools are created to collect visual data from network cameras continuously during the pandemic. This paper describes the methods to discover network cameras on the Internet, the methods to collect and manage data, and preliminary results of data analysis. This project can be the foundation for observing the possible "second wave" in fall 2020. The data may be used for post-pandemic analysis by sociologists, public health experts, and meteorologists.
 },
-      html={https://ecommons.luc.edu/cs_facpubs/247/},
-      pdf={https://arxiv.org/abs/2005.09091}
+  html={https://ecommons.luc.edu/cs_facpubs/247/},
+  pdf={https://arxiv.org/abs/2005.09091},
 }
 
-
 @misc{FLICYouTube,
-  abbr={Presentation},
-    title={FLIC: A Distributed Fog Cache for City-Scale Applications (Presentatiion)},
-    author={Jack West and Neil Klingensmith and George K. Thiruvathukal},
-    abstract={We present FLIC, a distributed software data caching framework for fogs that reduces network traffic and latency. FLICis targeted toward city-scale deployments of cooperative IoT devices in which each node gathers and shares data with surrounding devices. As machine learning and other data processing techniques that require large volumes of training data are ported to low-cost and low-power IoT systems, we expect that data analysis will be moved away from the cloud. Separation from the cloud will reduce reliance on power-hungry centralized cloud-based infrastructure. However, city-scale deployments of cooperative IoT devices often connect to the Internet with cellular service, in which service charges are proportional to network usage. IoT system architects must be clever in order to keep costs down in these scenarios. To reduce the network bandwidth required to operate city-scale deployments of cooperative IoT systems, FLIC implements a distributed cache on the IoT nodes in the fog. FLIC allows the IoT network to share its data without repetitively interacting with a simple cloud storage service reducing calls out to a backing store. Our results displayed a less than 2% miss rate on reads. Thus, allowing for only 5% of requests needing the backing store. We were also able to achieve more than 50% reduction in bytes transmitted per second.},
-    html={https://www.youtube.com/watch?v=avYV1m_1yg8&feature=youtu.be},
-    year={2020}
+  abbr={Video},
+  html={https://www.youtube.com/watch?v=avYV1m_1yg8&feature=youtu.be},
+  title={FLIC: A Distributed Fog Cache for City-Scale Applications (Presentatiion)},
+  author={Jack West and Neil Klingensmith and George K. Thiruvathukal},
+  abstract={We present FLIC, a distributed software data caching framework for fogs that reduces network traffic and latency. FLICis targeted toward city-scale deployments of cooperative IoT devices in which each node gathers and shares data with surrounding devices. As machine learning and other data processing techniques that require large volumes of training data are ported to low-cost and low-power IoT systems, we expect that data analysis will be moved away from the cloud. Separation from the cloud will reduce reliance on power-hungry centralized cloud-based infrastructure. However, city-scale deployments of cooperative IoT devices often connect to the Internet with cellular service, in which service charges are proportional to network usage. IoT system architects must be clever in order to keep costs down in these scenarios. To reduce the network bandwidth required to operate city-scale deployments of cooperative IoT systems, FLIC implements a distributed cache on the IoT nodes in the fog. FLIC allows the IoT network to share its data without repetitively interacting with a simple cloud storage service reducing calls out to a backing store. Our results displayed a less than 2% miss rate on reads. Thus, allowing for only 5% of requests needing the backing store. We were also able to achieve more than 50% reduction in bytes transmitted per second.},
+  year={2020},
 }
 
 @ARTICLE{10.3389/fncir.2020.00012,  
   abbr={Frontiers Journal},
+  html={https://ecommons.luc.edu/cs_facpubs/240/},
+  pdf={https://www.frontiersin.org/articles/10.3389/fncir.2020.00012/full},
   selected={true},
-AUTHOR={Dematties, Dario and Rizzi, Silvio and Thiruvathukal, George K. and Pérez, Mauricio David and Wainselboim, Alejandro and Zanutto, B. Silvano},
-TITLE={A Computational Theory for the Emergence of Grammatical Categories in Cortical Dynamics},	
-JOURNAL={Frontiers in Neural Circuits},	
-VOLUME={14},
-PAGES={12},
-YEAR={2020},
-URL={https://www.frontiersin.org/article/10.3389/fncir.2020.00012},
-DOI={10.3389/fncir.2020.00012},
-ISSN={1662-5110},
-ABSTRACT={A general agreement in psycholinguistics claims that syntax and meaning are unified precisely and very quickly during online sentence processing. Although several theories have advanced arguments regarding the neurocomputational bases of this phenomenon, we argue that these theories could potentially benefit by including neurophysiological data concerning cortical dynamics constraints in brain tissue. In addition, some theories promote the integration of complex optimization methods in neural tissue. In this paper we attempt to fill these gaps introducing a computational model inspired in the dynamics of cortical tissue. In our modeling approach, proximal afferent dendrites produce stochastic cellular activations, while distal dendritic branches–on the other hand–contribute independently to somatic depolarization by means of dendritic spikes, and finally, prediction failures produce massive firing events preventing formation of sparse distributed representations. The model presented in this paper combines semantic and coarse-grained syntactic constraints for each word in a sentence context until grammatically related word function discrimination emerges spontaneously by the sole correlation of lexical information from different sources without applying complex optimization methods. By means of support vector machine techniques, we show that the sparse activation features returned by our approach are well suited—bootstrapping from the features returned by Word Embedding mechanisms—to accomplish grammatical function classification of individual words in a sentence. In this way we develop a biologically guided computational explanation for linguistically relevant unification processes in cortex which connects psycholinguistics to neurobiological accounts of language. We also claim that the computational hypotheses established in this research could foster future work on biologically-inspired learning algorithms for natural language processing applications.},
-html={https://ecommons.luc.edu/cs_facpubs/240/},
-pdf={https://www.frontiersin.org/articles/10.3389/fncir.2020.00012/full}
-}
-
-
+  AUTHOR={Dematties, Dario and Rizzi, Silvio and Thiruvathukal, George K. and Pérez, Mauricio David and Wainselboim, Alejandro and Zanutto, B. Silvano},
+  TITLE={A Computational Theory for the Emergence of Grammatical Categories in Cortical Dynamics},	
+  JOURNAL={Frontiers in Neural Circuits},	
+  VOLUME={14},
+  PAGES={12},
+  YEAR={2020},
+  URL={https://www.frontiersin.org/article/10.3389/fncir.2020.00012},
+  DOI={10.3389/fncir.2020.00012},
+  ISSN={1662-5110},
+  ABSTRACT={A general agreement in psycholinguistics claims that syntax and meaning are unified precisely and very quickly during online sentence processing. Although several theories have advanced arguments regarding the neurocomputational bases of this phenomenon, we argue that these theories could potentially benefit by including neurophysiological data concerning cortical dynamics constraints in brain tissue. In addition, some theories promote the integration of complex optimization methods in neural tissue. In this paper we attempt to fill these gaps introducing a computational model inspired in the dynamics of cortical tissue. In our modeling approach, proximal afferent dendrites produce stochastic cellular activations, while distal dendritic branches–on the other hand–contribute independently to somatic depolarization by means of dendritic spikes, and finally, prediction failures produce massive firing events preventing formation of sparse distributed representations. The model presented in this paper combines semantic and coarse-grained syntactic constraints for each word in a sentence context until grammatically related word function discrimination emerges spontaneously by the sole correlation of lexical information from different sources without applying complex optimization methods. By means of support vector machine techniques, we show that the sparse activation features returned by our approach are well suited—bootstrapping from the features returned by Word Embedding mechanisms—to accomplish grammatical function classification of individual words in a sentence. In this way we develop a biologically guided computational explanation for linguistically relevant unification processes in cortex which connects psycholinguistics to neurobiological accounts of language. We also claim that the computational hypotheses established in this research could foster future work on biologically-inspired learning algorithms for natural language processing applications.},
+}  
 
 @INPROCEEDINGS{9028394,
-abbr={IEEE Conference},
-selected={true},
-author={R. I. {Greenberg} and G. K. {Thiruvathukal}},
-booktitle={2019 IEEE Frontiers in Education Conference (FIE)}, title={Exercises Integrating High School Mathematics with Robot Motion Planning},
-year={2019},
-volume={},
-number={},
-pages={1-5},
-abstract={This Innovative Practice Work in Progress presents progress in developing exercises for high school students incorporating level-appropriate mathematics into robotics activities. We assume mathematical foundations ranging from algebra to precalculus, whereas most prior work on integrating mathematics into robotics uses only very elementary mathematical reasoning or, at the other extreme, is comprised of technical papers or books using calculus and other advanced mathematics. The exercises suggested are relevant to any differential-drive robot, which is an appropriate model for many different varieties of educational robots. They guide students towards comparing a variety of natural navigational strategies making use of typical movement primitives. The exercises align with Common Core State Standards for Mathematics.},
-keywords={computer aided instruction;educational institutions;educational robots;mathematics computing;mobile robots;path planning;differential-drive robot;educational robots;high school mathematics;level-appropriate mathematics;robot motion planning;Wheels;Mobile robots;Navigation;Robot kinematics;Mathematics;Sensors;Robotics;Computer science education;Mathematics of Computing},
-doi={10.1109/FIE43999.2019.9028394},
-html={http://ecommons.luc.edu/cs_facpubs/231},
-ISSN={2377-634X},
-month={Oct},}
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/231},
+  pdf={http://ecommons.luc.edu/cs_facpubs/231},
+  selected={true},
+  author={R. I. {Greenberg} and G. K. {Thiruvathukal}},
+  booktitle={2019 IEEE Frontiers in Education Conference (FIE)},
+  title={Exercises Integrating High School Mathematics with Robot Motion Planning},
+  year={2019},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={This Innovative Practice Work in Progress presents progress in developing exercises for high school students incorporating level-appropriate mathematics into robotics activities. We assume mathematical foundations ranging from algebra to precalculus, whereas most prior work on integrating mathematics into robotics uses only very elementary mathematical reasoning or, at the other extreme, is comprised of technical papers or books using calculus and other advanced mathematics. The exercises suggested are relevant to any differential-drive robot, which is an appropriate model for many different varieties of educational robots. They guide students towards comparing a variety of natural navigational strategies making use of typical movement primitives. The exercises align with Common Core State Standards for Mathematics.},
+  keywords={computer aided instruction;educational institutions;educational robots;mathematics computing;mobile robots;path planning;differential-drive robot;educational robots;high school mathematics;level-appropriate mathematics;robot motion planning;Wheels;Mobile robots;Navigation;Robot kinematics;Mathematics;Sensors;Robotics;Computer science education;Mathematics of Computing},
+  doi={10.1109/FIE43999.2019.9028394},
+  ISSN={2377-634X},
+  month={Oct},
+}
 
+@article{10.1371/journal.pone.0217966,
+  abbr={PLOS ONE},
+  selected={true},
+  author = {Dematties, Dario AND Rizzi, Silvio AND Thiruvathukal, George K. AND Wainselboim, Alejandro AND Zanutto, B. Silvano},
+  journal = {PLOS ONE},
+  publisher = {Public Library of Science},
+  title = {Phonetic acquisition in cortical dynamics, a computational approach},
+  year = {2019},
+  month = {06},
+  volume = {14},
+  url = {https://doi.org/10.1371/journal.pone.0217966},
+  pages = {1-28},
+  abstract = {Many computational theories have been developed to improve artificial phonetic classification performance from linguistic auditory streams. However, less attention has been given to psycholinguistic data and neurophysiological features recently found in cortical tissue. We focus on a context in which basic linguistic units–such as phonemes–are extracted and robustly classified by humans and other animals from complex acoustic streams in speech data. We are especially motivated by the fact that 8-month-old human infants can accomplish segmentation of words from fluent audio streams based exclusively on the statistical relationships between neighboring speech sounds without any kind of supervision. In this paper, we introduce a biologically inspired and fully unsupervised neurocomputational approach that incorporates key neurophysiological and anatomical cortical properties, including columnar organization, spontaneous micro-columnar formation, adaptation to contextual activations and Sparse Distributed Representations (SDRs) produced by means of partial N-Methyl-D-aspartic acid (NMDA) depolarization. Its feature abstraction capabilities show promising phonetic invariance and generalization attributes. Our model improves the performance of a Support Vector Machine (SVM) classifier for monosyllabic, disyllabic and trisyllabic word classification tasks in the presence of environmental disturbances such as white noise, reverberation, and pitch and voice variations. Furthermore, our approach emphasizes potential self-organizing cortical principles achieving improvement without any kind of optimization guidance which could minimize hypothetical loss functions by means of–for example–backpropagation. Thus, our computational model outperforms multiresolution spectro-temporal auditory feature representations using only the statistical sequential structure immerse in the phonotactic rules of the input stream.},
+  number = {6},
+  html = {https://ecommons.luc.edu/cs_facpubs/229/},
+  pdf = {https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0217966&type=printable},
+  doi = {10.1371/journal.pone.0217966}
+}
 
 @inproceedings{10.1145/3337932.3338814,
-author = {L"{a}ufer, Konstantin and O'Sullivan, John and Thiruvathukal, George K.},
-title = {Tests as Maintainable Assets via Auto-Generated Spies: A Case Study Involving the Scala Collections Library's Iterator Trait},
-year = {2019},
-isbn = {9781450368247},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3337932.3338814},
-doi = {10.1145/3337932.3338814},
-abstract = {In testing stateful abstractions, it is often necessary to record interactions, such as method invocations, and express assertions over these interactions. Following the Test Spy design pattern, we can reify such interactions programmatically through additional mutable state. Alternatively, a mocking framework, such as Mockito, can automatically generate test spies that allow us to record the interactions and express our expectations in a declarative domain-specific language. According to our study of the test code for Scala's Iterator trait, the latter approach can lead to a significant reduction of test code complexity in terms of metrics such as code size (in some cases over 70% smaller), cyclomatic complexity, and amount of additional mutable state required. In this tools paper, we argue that the resulting test code is not only more maintainable, readable, and intentional, but also a better stylistic match for the Scala community than manually implemented, explicitly stateful test spies.},
-booktitle = {Proceedings of the Tenth ACM SIGPLAN Symposium on Scala},
-pages = {17–21},
-numpages = {5},
-keywords = {automated unit testing, test code metrics, stream processing, spy-based testing, mock-based testing, prefix sum, iterator design pattern, test code complexity},
-location = {London, United Kingdom},
-series = {Scala '19},
-html={http://ecommons.luc.edu/cs_facpubs/230
-}
+  author = {L"{a}ufer, Konstantin and O'Sullivan, John and Thiruvathukal, George K.},
+  title = {Tests as Maintainable Assets via Auto-Generated Spies: A Case Study Involving the Scala Collections Library's Iterator Trait},
+  year = {2019},
+  isbn = {9781450368247},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3337932.3338814},
+  doi = {10.1145/3337932.3338814},
+  abstract = {In testing stateful abstractions, it is often necessary to record interactions, such as method invocations, and express assertions over these interactions. Following the Test Spy design pattern, we can reify such interactions programmatically through additional mutable state. Alternatively, a mocking framework, such as Mockito, can automatically generate test spies that allow us to record the interactions and express our expectations in a declarative domain-specific language. According to our study of the test code for Scala's Iterator trait, the latter approach can lead to a significant reduction of test code complexity in terms of metrics such as code size (in some cases over 70% smaller), cyclomatic complexity, and amount of additional mutable state required. In this tools paper, we argue that the resulting test code is not only more maintainable, readable, and intentional, but also a better stylistic match for the Scala community than manually implemented, explicitly stateful test spies.},
+  booktitle = {Proceedings of the Tenth ACM SIGPLAN Symposium on Scala},
+  pages = {17–21},
+  numpages = {5},
+  keywords = {automated unit testing, test code metrics, stream processing, spy-based testing, mock-based testing, prefix sum, iterator design pattern, test code complexity},
+  location = {London, United Kingdom},
+  series = {Scala '19},
+  html={http://ecommons.luc.edu/cs_facpubs/230}
 }
 
-http://ecommons.luc.edu/cs_facpubs/229
 http://ecommons.luc.edu/cs_facpubs/219
-http://ecommons.luc.edu/cs_facpubs/214
-http://ecommons.luc.edu/cs_facpubs/216
-http://ecommons.luc.edu/cs_facpubs/213
-http://ecommons.luc.edu/cs_facpubs/207
-http://ecommons.luc.edu/cs_facpubs/210
-http://ecommons.luc.edu/cs_facpubs/211
-http://ecommons.luc.edu/cs_facpubs/212
-http://ecommons.luc.edu/cs_facpubs/218
-http://ecommons.luc.edu/cs_facpubs/208
-http://ecommons.luc.edu/cs_facpubs/215
-http://ecommons.luc.edu/cs_facpubs/233
-http://ecommons.luc.edu/cs_facpubs/217
 
+@misc{thiruvathukal2019benchmarking,
+  abbr={ArXiv},
+  html={https://ecommons.luc.edu/cs_facpubs/219/},
+  pdf={https://ecommons.luc.edu/cs_facpubs/219/},
+  title={A Benchmarking Study to Evaluate Apache Spark on Large-Scale Supercomputers}, 
+  author={George K. Thiruvathukal and Cameron Christensen and Xiaoyong Jin and François Tessier and Venkatram Vishwanath},
+  year={2019},
+  eprint={1904.11812},
+  archivePrefix={arXiv},
+  primaryClass={cs.DC}
+}
+
+http://ecommons.luc.edu/cs_facpubs/214
+
+
+@inproceedings{EistyCarverThiruvathukalEASE,
+  abbr            = {Conference},
+  html            = {http://ecommons.luc.edu/cs_facpubs/214},
+  pdf             = {http://ecommons.luc.edu/cs_facpubs/214},
+  author          = {Nasir U. Eisty and George K. Thiruvathukal and Jeffrey C. Carver},
+  title           = {Use of Software Process in Research Software Development: A Survey},
+  booktitle       = {Proceedings of the Evaluation and Assessment on Software Engineering 2019},
+  editor          = {EASE},
+  year            = {2019},
+  doi             = {10.1145/3319008.3319351},
+  abstract        = {Background: Developers face challenges in building high-quality research software due to its inherent complexity. These challenges can reduce the confidence users have in the quality of the result produced by the software. Use of a defined software development process, which divides the development into distinct phases, results in improved design, more trustworthy results, and better project management. Aims: This paper focuses on gaining a better understanding of the use of software development process for research software. Method: We surveyed research software developers to collect information about their use of software development processes. We analyze whether and demographic factors influence the respondents' use of and perceived value in defined process. Results: Based on 98 responses, research software developers appear to follow a defined software development process at least some of the time. The respondents also have a strong positive perception about the value of following processes. Conclusions: To produce high-quality and reliable research software, which is critical for many research domains, research software developers must follow a proper software development process. The results indicate a positive perception of value about using defined development processes that should lead to both short-term benefits through improved results and long-term benefits through more maintainable software.},
+}
+
+
+http://ecommons.luc.edu/cs_facpubs/216
+
+@misc{barba_bazán_brown_guimera_gymrek_hanna_heagy_huff_katz_madan_et al_2019,
+  abbr={Tech Report},
+  html={http://ecommons.luc.edu/cs_facpubs/216},
+  pdf={http://ecommons.luc.edu/cs_facpubs/216},
+  title={Giving software its due through community-driven review and publication},
+  url={osf.io/f4vx6},
+  DOI={10.31219/osf.io/f4vx6},
+  publisher={OSF Preprints},
+  author={Barba, Lorena A and Bazán, Juanjo and Brown, Jed and Guimera, Roman V and Gymrek, Melissa and Hanna, Alex and Heagy, Lindsey J and Huff, Kathryn D and Katz, Daniel S and Madan, Christopher R and et al.},
+  year={2019},
+  month={Apr},
+}
+
+http://ecommons.luc.edu/cs_facpubs/213
+
+@inproceedings{key,
+  abbr={Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/213},
+  pdf={http://ecommons.luc.edu/cs_facpubs/213},
+  author          = {Ronald I. Greenberg, George K. Thiruvathukal, and Sara T. Greenberg},
+  title           = {Integrating mathematics and educational robotics: Simple motion planning},
+  booktitle       = {10th International Conference on Robotics in Education (RiE)},
+  editor          = {Springer Verlag},
+  year            = {2019}
+}
+
+@INPROCEEDINGS{8695375,
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/207},
+  pdf={http://ecommons.luc.edu/cs_facpubs/207},
+  author={C. {Tung} and M. R. {Kelleher} and R. J. {Schlueter} and B. {Xu} and Y. {Lu} and G. K. {Thiruvathukal} and Y. {Chen} and Y. {Lu}},
+  booktitle={2019 IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)}, title={Large-Scale Object Detection of Images from Network Cameras in Variable Ambient Lighting Conditions},
+  year={2019},
+  volume={},
+  number={},
+  pages={393-398},
+  abstract={Computer vision relies on labeled datasets for training and evaluation in detecting and recognizing objects. The popular computer vision program, YOLO ("You Only Look Once"), has been shown to accurately detect objects in many major image datasets. However, the images found in those datasets, are independent of one another and cannot be used to test YOLO's consistency at detecting the same object as its environment (e.g. ambient lighting) changes. This paper describes a novel effort to evaluate YOLO's consistency for large-scale applications. It does so by working (a) at large scale and (b) by using consecutive images from a curated network of public video cameras deployed in a variety of real-world situations, including traf?c intersections, national parks, shopping malls, university campuses, etc. We speci?cally examine YOLO's ability to detect objects in different scenarios (e.g., daytime vs. night), leveraging the cameras' ability to rapidly retrieve many successive images for evaluating detection consistency. Using our camera network and advanced computing resources (supercomputers), we analyzedmorethan5millionimagescapturedby140network cameras in 24 hours. Compared with labels marked by humans (considered as "ground truth"), YOLO struggles to consistently detect the same humans and cars as their positions change from one frame to the next; it also struggles to detect objects at night time. Our ?ndings suggest that state-of-the art vision solutions should be trained by data from network camera with contextual information before they can be deployed in applications that demand high consistency on object detection.},
+  keywords={cameras;computer vision;lighting;object detection;video cameras;curated network;public video cameras;YOLO's ability;successive images;detection consistency;camera network;advanced computing resources;labels;state-of-the art vision solutions;network camera;variable ambient lighting conditions;labeled datasets;training;image datasets;large-scale applications;consecutive images;high consistency;large-scale object detection;objects recognition;computer vision program;YOLO consistency;You Only Look Once;time 24.0 hour;Cameras;Object detection;Lighting;Streaming media;Automobiles;Computer vision;Detectors;Computer Vision;Object Recognition;Network Cameras;Object Detection},
+  doi={10.1109/MIPR.2019.00080},
+  ISSN={},
+  month={March},
+}
+
+@software{dematties_dario_2019_2584864,
+  abbr={Data Set},
+  html={http://ecommons.luc.edu/cs_facpubs/210},
+  abstract={The human brain is the most complex object created by evolution in the known universe. Yet, how much of this complexity is devoted to exclusively carrying out its algorithmic capabilities and how much of it has been inherited from biological paths of evolution in order to work properly in its physical environment? What if the information processing properties of the brain could be reduced to a few simple columnar rules replicated throughout the neocortex? In our research project we seek for those principles by means of the elaboration of computational models of the neocortex.
+
+},
+  author       = {Dematties, Dario and
+                  Thiruvathukal, George K. and
+                  Rizzi, Silvio and
+                  Wainselboim, Alejandro Javier and
+                  Zanutto, Bonifacio Silvano},
+  title        = {{neurophon/neurophon: Minor update to ensure future 
+                   updates include Zenodo author/keyword metadata}},
+  month        = mar,
+  year         = 2019,
+  publisher    = {Zenodo},
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.2584864},
+  url          = {https://doi.org/10.5281/zenodo.2584864}
+}
+
+@dataset{dematties_dario_2019_2581550,
+  abbr={Data Set},
+  html={http://ecommons.luc.edu/cs_facpubs/211},
+  abstract={This repository holds three files: File S1 Data. Cortical Spectro-Temporal Model (CSTM) experimental results data. It contains a spreadsheet including all the numerical results returned by the experiments as well as the complete Statistical Significance tests conducted in this work. File S2 Data. CSTM complementary experimental results data. It contains a spreadsheet that includes all the numerical results returned by a complementary set of experiments. File S1 Appendix. Computational Setup and Complementary Experiments. An appendix including the Computational Setup of our CSTM, which describes its object oriented inheritance structure as well as the parallelization strategy used for its implementation in High Performance Computing (HPC) resources. We also include Strong and Weak scaling tests of our implementation on HPC resources. An appendix including a battery of complementary experiments showing the classification accuracy levels of different instances of the EL in the CSTM.},
+
+  author       = {Dematties, Dario and
+                  Thiruvathukal, George K. and
+                  Rizzi, Silvio and
+                  Wainselboim, Alejandro Javier and
+                  Zanutto, Bonifacio Silvano},
+  title        = {{Experimental Results and Appendices: Cortical 
+                   Spectro-Temporal Model (CSTM).}},
+  month        = mar,
+  year         = 2019,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.2581550},
+  url          = {https://doi.org/10.5281/zenodo.2581550}
+}
+
+@dataset{dematties_dario_2019_2576130,
+  abbr = {Data Set},
+  html = {http://ecommons.luc.edu/cs_facpubs/212},
+
+  author       = {Dematties, Dario and
+                  Thiruvathukal, George K. and
+                  Rizzi, Silvio and
+                  Wainselboim, Alejandro Javier and
+                  Zanutto, Bonifacio Silvano},
+  title        = {{Datasets used to train and test the Cortical 
+                   Spectro-Temporal Model (CSTM).}},
+  month        = feb,
+  year         = 2019,
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.2576130},
+  url          = {https://doi.org/10.5281/zenodo.2576130}
+}
+
+@article{Smith2019,
+  abbr={Poster},
+  html={http://ecommons.luc.edu/cs_facpubs/218},
+  pdf={https://figshare.com/articles/SIAM_CSE_2019_Minisymposterium_The_Journal_of_Open_Source_Software/7763171},
+  abstrct = {This poster describes the progress of the Journal of Open Source Software (JOSS), a free, open-access journal designed to publish brief papers about research software. The primary purpose of JOSS is to enable developers of research software to receive citation credit equivalent to typical archival publications. JOSS papers are deliberately short and required to include a summary describing the purpose and high-level functionality of the software (written for a diverse, non-specialist audience), a statement of need, authors and their affiliations, and key references, as well as link to an archived version of the software (e.g., DOI obtained from Zenodo). Upon acceptance, papers receive a CrossRef DOI. Rather than a review of a lengthy software paper (including, e.g., methodology, validation, sample results), JOSS submissions undergo rigorous peer review of the article and software, including documentation, tests, continuous integration, and licensing. The JOSS review process is modeled on the established approach of the rOpenSci collaboration. The entire submission and review process occurs openly on GitHub; papers not yet accepted remain visible and under review until the authors make appropriate changes for acceptance—unlike other journals, papers requiring major revision are not rejected. JOSS was founded in May 2016, and in its first year published 111 articles in a variety of fields. Since then, JOSS has published over 494 articles (as of 23 Feb 2019), and submissions continue to grow.},
+  author = "Arfon Smith and Lorena A. Barba and Daniel S. Katz and Kyle Niemeyer and Tania Allard and Juanjo Bazan and Jed Brown and Jason Clark and Roman Valls Guimera and Melissa Gymrek and Lindsey Heagy and Kathryn Huff and George K. Thiruvathukal and Christopher Madan and Kevin Moerman and Lorena Pantano and Viviane Pons and Jack Poulson and Pjotr Prins and Karthik Ram and Elizabeth Ramirez and Ariel Rokem and Kristen Thyng and Yo Yehudi",
+  title = "{SIAM CSE 2019 Minisymposterium: The Journal of Open Source Software}",
+  year = "2019",
+  month = "2",
+  url = "https://figshare.com/articles/poster/SIAM_CSE_2019_Minisymposterium_The_Journal_of_Open_Source_Software/7763171",
+  doi = "10.6084/m9.figshare.7763171.v1"
+}
+
+
+@ARTICLE{8594612,
+  abbr={IEEE Magazine},
+  html={http://ecommons.luc.edu/cs_facpubs/208},
+  pdf={http://ecommons.luc.edu/cs_facpubs/208},
+  author={Z. {Kapach} and A. {Ulmer} and D. {Merrick} and A. {Alikhan} and Y. {Lu} and A. {Mohan} and A. S. {Kaseb} and G. K. {Thiruvathukal}},
+  journal={IEEE MultiMedia}, title={Cloud Resource Optimization for Processing Multiple Streams of Visual Data},
+  year={2019},
+  volume={26},
+  number={3},
+  pages={31-41},
+  abstract={Hundreds of millions of network cameras have been installed throughout the world. Each is capable of providing a vast amount of real-time data. Analyzing the massive data generated by these cameras requires significant computational resources and the demands may vary over time. Cloud computing shows the most promise to provide the needed resources on demand. In this paper, we investigate how to allocate cloud resources when analyzing real-time data streams from network cameras. A resource manager considers many factors that affect its decisions, including the types of analysis, the number of data streams, and the locations of the cameras. The manager then selects the most cost-efficient types of cloud instances (e.g., central processing unit versus general-purpose graphics processing units) to meet the computational demands for analyzing streams. We evaluate the effectiveness of our approach using Amazon Web Services. Experiments demonstrate more than 50% cost reduction for real workloads.},
+  keywords={cloud computing;data visualisation;optimisation;resource allocation;Web services;cloud resource optimization;visual data;network cameras;cloud computing;resource manager;cost-efficient types;cloud instances;computational demands;computational resources;real-time data streams;Amazon Web services;multiple streams processing;Cloud computing;Cameras;Streaming media;Graphics processing units;Real-time systems;Central Processing Unit;Visualization},
+  doi={10.1109/MMUL.2018.2890255},
+  ISSN={1941-0166},
+  month={July},
+}
+
+@ARTICLE{8848161,
+  abbr={IEEE Magazine},
+  html={http://ecommons.luc.edu/cs_facpubs/215},
+  pdf={http://ecommons.luc.edu/cs_facpubs/215},
+  author={Y. {Lu} and G. K. {Thiruvathukal} and A. S. {Kaseb} and K. {Gauen} and D. {Rijhwani} and R. {Dailey} and D. {Malik} and Y. {Huang} and S. {Aghajanzadeh} and M. M. {Guo}},
+  journal={Computer}, title={See the World Through Network Cameras},
+  year={2019},
+  volume={52},
+  number={10},
+  pages={30-40},
+  abstract={Millions of network cameras have been deployed worldwide. Real-time data from many network cameras can offer instant views of multiple locations for many applications. We describe the real-time data available from these cameras and potential applications.},
+  keywords={cameras;network cameras;Cameras;IP networks;Urban areas;Real-time systems;Streaming media;Internet;Visualization},
+  doi={10.1109/MC.2019.2906841},
+  ISSN={1558-0814},
+  month={Oct},
+}
+
+@article{Brophy_Matthews_Thiruvathukal_2019, 
+  abbr={Journal SAJS}, 
+  html={http://ecommons.luc.edu/cs_facpubs/233},
+  pdf={http://ecommons.luc.edu/cs_facpubs/233},
+  title={An analysis of the effect of tooth wear on bovid identification},
+  volume={115},
+  url={https://www.sajs.co.za/article/view/5496},
+  doi={10.17159/sajs.2019/5496}, 
+  abstract={Previous research provides a method for reducing the subjectivity in molar tooth identification of animals in the family Bovidae, by quantifying the occlusal surface of teeth using elliptical Fourier analysis. This current paper specifically tests what effect teeth with medium to late wear have on the identification of bovid teeth when using the form (size and shape) of the occlusal surface to classify specimens.},
+  journal={South African Journal of Science}, 
+  author={Brophy, Juliet K. and Matthews, Gregory J. and Thiruvathukal, George K.},
+  year={2019},
+  month={Jul.}
+}
+
+
+@ARTICLE{8693826,
+  abbr={IEEE Conference},
+  html={http://ecommons.luc.edu/cs_facpubs/217},
+  pdf={http://ecommons.luc.edu/cs_facpubs/217},
+  author={S. {Alyamkin} and M. {Ardi} and A. C. {Berg} and A. {Brighton} and B. {Chen} and Y. {Chen} and H. {Cheng} and Z. {Fan} and C. {Feng} and B. {Fu} and K. {Gauen} and A. {Goel} and A. {Goncharenko} and X. {Guo} and S. {Ha} and A. {Howard} and X. {Hu} and Y. {Huang} and D. {Kang} and J. {Kim} and J. G. {Ko} and A. {Kondratyev} and J. {Lee} and S. {Lee} and S. {Lee} and Z. {Li} and Z. {Liang} and J. {Liu} and X. {Liu} and Y. {Lu} and Y. {Lu} and D. {Malik} and H. H. {Nguyen} and E. {Park} and D. {Repin} and L. {Shen} and T. {Sheng} and F. {Sun} and D. {Svitov} and G. K. {Thiruvathukal} and B. {Zhang} and J. {Zhang} and X. {Zhang} and S. {Zhuo}},
+  journal={IEEE Journal on Emerging and Selected Topics in Circuits and Systems}, title={Low-Power Computer Vision: Status, Challenges, and Opportunities},
+  year={2019},
+  volume={9},
+  number={2},
+  pages={411-421},
+  abstract={Computer vision has achieved impressive progress in recent years. Meanwhile, mobile phones have become the primary computing platforms for millions of people. In addition to mobile phones, many autonomous systems rely on visual data for making decisions, and some of these systems have limited energy (such as unmanned aerial vehicles also called drones and mobile robots). These systems rely on batteries, and energy efficiency is critical. This paper serves the following two main purposes. First, examine the state of the art for low-power solutions to detect objects in images. Since 2015, the IEEE Annual International Low-Power Image Recognition Challenge (LPIRC) has been held to identify the most energy-efficient computer vision solutions. This paper summarizes the 2018 winners' solutions. Second, suggest directions for research as well as opportunities for low-power computer vision.},
+  keywords={computer vision;object detection;visual data;decision making;batteries;object detection;energy-efficient computer vision solutions;low-power solutions;energy efficiency;unmanned aerial vehicles;autonomous systems;primary computing platforms;mobile phones;low-power computer vision;Computer vision;Image recognition;Hardware;Mobile handsets;Software;Computer architecture;Benchmark testing;Computer vision;low-power electronics;object detection;machine intelligence},
+  doi={10.1109/JETCAS.2019.2911899},
+  ISSN={2156-3365},
+  month={June},
+}
 
 
 @inproceedings{ParCo2019,
-  abbr            = {ParCo},
+  abbr            = {Conference},
   author          = {Dario Dematties and George K. Thiruvathukal and Silvio Rizzi and Alejandro Wainselboim and B. Silvano Zanutto},
   title           = {Towards High-End Scalability on Biologically-Inspired Computational ModelsAuthors},
   booktitle       = {Parallel Computing: Technology Trends},
@@ -214,166 +437,109 @@ http://ecommons.luc.edu/cs_facpubs/217
   editor          = {Ian Foster and Gerhard R. Joubert and Luděk Kučera and Wolfgang E. Nagel and Frans Peter},
   year            = {2020},
   html            = {https://ecommons.luc.edu/cs_facpubs/242/},
-  abstract = {The interdisciplinary field of neuroscience has made significantprogress in recent decades, providing the scientific community in gen-eral with a new level of understanding on how the brain works beyondthe  store-and-fire  model  found  in  traditional  neural  networks.  Mean-while,  Machine  Learning  (ML)  based  on  established  models  has  seena  surge  of  interest  in  the  High  Performance  Computing  (HPC)  com-munity,  especially  through  the  use  of  high-end  accelerators,  such  asGraphical  Processing  Units  (GPUs),  including  HPC  clusters  of  same.In our work, we are motivated to exploit these high-performance com-puting  developments  and  understand  the  scaling  challenges  for  new–biologically inspired–learning models on leadership-class HPC resources.These  emerging  models  feature  sparse  and  random  connectivity  pro-files  that  map  to  more  loosely-coupled  parallel  architectures  with  alarge number of CPU cores per node. Contrasted with traditional MLcodes, these methods exploit loosely-coupled sparse data structures asopposed  to  tightly-coupled  dense  matrix  computations,  which  benefitfrom SIMD-style parallelism found on GPUs. In this paper we introducea hybrid Message Passing Interface (MPI) and Open Multi-Processing(OpenMP) parallelization scheme to accelerate and scale our computa-tional model based on the dynamics of cortical tissue. We ran compu-tational tests on a leadership class visualization and analysis cluster atArgonne National Laboratory. We include a study of strong and weakscaling, where we obtained parallel efficiency measures with a minimumabove 87% and a maximum above 97% for simulations of our biologicallyinspired neural network on up to 64 computing nodes running 8 threadseach. This study shows promise of the MPI+OpenMP hybrid approachto support flexible and biologically-inspired computational experimen-tal scenarios. In addition, we present the viability in the application ofthese strategies in high-end leadership computers in the future.}
+  abstract         = {The interdisciplinary field of neuroscience has made significantprogress in recent decades, providing the scientific community in gen-eral with a new level of understanding on how the brain works beyondthe  store-and-fire  model  found  in  traditional  neural  networks.  Mean-while,  Machine  Learning  (ML)  based  on  established  models  has  seena  surge  of  interest  in  the  High  Performance  Computing  (HPC)  com-munity,  especially  through  the  use  of  high-end  accelerators,  such  asGraphical  Processing  Units  (GPUs),  including  HPC  clusters  of  same.In our work, we are motivated to exploit these high-performance com-puting  developments  and  understand  the  scaling  challenges  for  new–biologically inspired–learning models on leadership-class HPC resources.These  emerging  models  feature  sparse  and  random  connectivity  pro-files  that  map  to  more  loosely-coupled  parallel  architectures  with  alarge number of CPU cores per node. Contrasted with traditional MLcodes, these methods exploit loosely-coupled sparse data structures asopposed  to  tightly-coupled  dense  matrix  computations,  which  benefitfrom SIMD-style parallelism found on GPUs. In this paper we introducea hybrid Message Passing Interface (MPI) and Open Multi-Processing(OpenMP) parallelization scheme to accelerate and scale our computa-tional model based on the dynamics of cortical tissue. We ran compu-tational tests on a leadership class visualization and analysis cluster atArgonne National Laboratory. We include a study of strong and weakscaling, where we obtained parallel efficiency measures with a minimumabove 87% and a maximum above 97% for simulations of our biologicallyinspired neural network on up to 64 computing nodes running 8 threadseach. This study shows promise of the MPI+OpenMP hybrid approachto support flexible and biologically-inspired computational experimen-tal scenarios. In addition, we present the viability in the application ofthese strategies in high-end leadership computers in the future.}
 }
 
 
 @misc{west2020voltkey,
   abbr={Tech Report},
-      title={VoltKey: Using Power Line Noise for Zero-Involvement Pairing and Authentication (Demo Abstract)}, 
-      author={Jack West and Tien VoNguyen and Isaac Ahlgren and Iryna Motyashok and George K. Thiruvathukal and Neil Klingensmith},
-      year={2020},
-      eprint={2004.00092},
-      archivePrefix={arXiv},
-      primaryClass={eess.SP},
-      html={https://ecommons.luc.edu/cs_facpubs/245/},
-      pdf={https://arxiv.org/abs/2004.00092}
+  title={VoltKey: Using Power Line Noise for Zero-Involvement Pairing and Authentication (Demo Abstract)}, 
+  author={Jack West and Tien VoNguyen and Isaac Ahlgren and Iryna Motyashok and George K. Thiruvathukal and Neil Klingensmith},
+  year={2020},
+  eprint={2004.00092},
+  archivePrefix={arXiv},
+  primaryClass={eess.SP},
+  html={https://ecommons.luc.edu/cs_facpubs/245/},
+  pdf={https://arxiv.org/abs/2004.00092}
 }
 
 @INPROCEEDINGS{9221198,
   abbr={IEEE Conference},
   selected={true},
-author={A. {Goel} and C. {Tung} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
-booktitle={2020 IEEE 6th World Forum on Internet of Things (WF-IoT)}, title={A Survey of Methods for Low-Power Deep Learning and Computer Vision},
-year={2020},
-volume={},
-number={},
-pages={1-6},
-abstract={Deep neural networks (DNNs) are successful in many computer vision tasks. However, the most accurate DNNs require millions of parameters and operations, making them energy, computation and memory intensive. This impedes the deployment of large DNNs in low-power devices with limited compute resources. Recent research improves DNN models by reducing the memory requirement, energy consumption, and number of operations without significantly decreasing the accuracy. This paper surveys the progress of low-power deep learning and computer vision, specifically in regards to inference, and discusses the methods for compacting and accelerating DNN models. The techniques can be divided into four major categories: (1) parameter quantization and pruning, (2) compressed convolutional filters and matrix factorization, (3) network architecture search, and (4) knowledge distillation. We analyze the accuracy, advantages, disadvantages, and potential solutions to the problems with the techniques in each category. We also discuss new evaluation metrics as a guideline for future research.},
-keywords={computer vision;learning (artificial intelligence);matrix decomposition;neural nets;knowledge distillation;network architecture search;matrix factorization;compressed convolutional filters;parameter quantization and pruning;computer vision tasks;deep neural networks;DNN models;low-power deep learning;energy consumption;memory requirement;low-power devices;neural networks;computer vision;low-power},
-doi={10.1109/WF-IoT48130.2020.9221198},
-ISSN={},
-html={http://ecommons.luc.edu/cs_facpubs/241},
-month={June},}
+  author={A. {Goel} and C. {Tung} and Y. -H. {Lu} and G. K. {Thiruvathukal}},
+  booktitle={2020 IEEE 6th World Forum on Internet of Things (WF-IoT)}, title={A Survey of Methods for Low-Power Deep Learning and Computer Vision},
+  year={2020},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Deep neural networks (DNNs) are successful in many computer vision tasks. However, the most accurate DNNs require millions of parameters and operations, making them energy, computation and memory intensive. This impedes the deployment of large DNNs in low-power devices with limited compute resources. Recent research improves DNN models by reducing the memory requirement, energy consumption, and number of operations without significantly decreasing the accuracy. This paper surveys the progress of low-power deep learning and computer vision, specifically in regards to inference, and discusses the methods for compacting and accelerating DNN models. The techniques can be divided into four major categories: (1) parameter quantization and pruning, (2) compressed convolutional filters and matrix factorization, (3) network architecture search, and (4) knowledge distillation. We analyze the accuracy, advantages, disadvantages, and potential solutions to the problems with the techniques in each category. We also discuss new evaluation metrics as a guideline for future research.},
+  keywords={computer vision;learning (artificial intelligence);matrix decomposition;neural nets;knowledge distillation;network architecture search;matrix factorization;compressed convolutional filters;parameter quantization and pruning;computer vision tasks;deep neural networks;DNN models;low-power deep learning;energy consumption;memory requirement;low-power devices;neural networks;computer vision;low-power},
+  doi={10.1109/WF-IoT48130.2020.9221198},
+  ISSN={},
+  html={http://ecommons.luc.edu/cs_facpubs/241},
+  month={June},
+}
 
 
 @inproceedings{10.1145/3366423.3380063,
   abbr={IEEE Conference},
   selected={true},
-author = {Hu, Xiao and Wang, Haobo and Vegesana, Anirudh and Dube, Somesh and Yu, Kaiwen and Kao, Gore and Chen, Shuo-Han and Lu, Yung-Hsiang and Thiruvathukal, George K. and Yin, Ming},
-title = {Crowdsourcing Detection of Sampling Biases in Image Datasets},
-year = {2020},
-isbn = {9781450370233},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3366423.3380063},
-doi = {10.1145/3366423.3380063},
-abstract = {Despite many exciting innovations in computer vision, recent studies reveal a number of risks in existing computer vision systems, suggesting results of such systems may be unfair and untrustworthy. Many of these risks can be partly attributed to the use of a training image dataset that exhibits sampling biases and thus does not accurately reflect the real visual world. Being able to detect potential sampling biases in the visual dataset prior to model development is thus essential for mitigating the fairness and trustworthy concerns in computer vision. In this paper, we propose a three-step crowdsourcing workflow to get humans into the loop for facilitating bias discovery in image datasets. Through two sets of evaluation studies, we find that the proposed workflow can effectively organize the crowd to detect sampling biases in both datasets that are artificially created with designed biases and real-world image datasets that are widely used in computer vision research and system development.},
-booktitle = {Proceedings of The Web Conference 2020},
-pages = {2955–2961},
-numpages = {7},
-keywords = {workflow design, image dataset, sampling bias, crowdsourcing},
-location = {Taipei, Taiwan},
-series = {WWW '20},
-html = {http://ecommons.luc.edu/cs_facpubs/244},
+  author = {Hu, Xiao and Wang, Haobo and Vegesana, Anirudh and Dube, Somesh and Yu, Kaiwen and Kao, Gore and Chen, Shuo-Han and Lu, Yung-Hsiang and Thiruvathukal, George K. and Yin, Ming},
+  title = {Crowdsourcing Detection of Sampling Biases in Image Datasets},
+  year = {2020},
+  isbn = {9781450370233},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3366423.3380063},
+  doi = {10.1145/3366423.3380063},
+  abstract = {Despite many exciting innovations in computer vision, recent studies reveal a number of risks in existing computer vision systems, suggesting results of such systems may be unfair and untrustworthy. Many of these risks can be partly attributed to the use of a training image dataset that exhibits sampling biases and thus does not accurately reflect the real visual world. Being able to detect potential sampling biases in the visual dataset prior to model development is thus essential for mitigating the fairness and trustworthy concerns in computer vision. In this paper, we propose a three-step crowdsourcing workflow to get humans into the loop for facilitating bias discovery in image datasets. Through two sets of evaluation studies, we find that the proposed workflow can effectively organize the crowd to detect sampling biases in both datasets that are artificially created with designed biases and real-world image datasets that are widely used in computer vision research and system development.},
+  booktitle = {Proceedings of The Web Conference 2020},
+  pages = {2955–2961},
+  numpages = {7},
+  keywords = {workflow design, image dataset, sampling bias, crowdsourcing},
+  location = {Taipei, Taiwan},
+  series = {WWW '20},
+  html = {http://ecommons.luc.edu/cs_facpubs/244},
 }
 
 @INPROCEEDINGS{9103479,
-abbr={IEEE Conference},
-selected={true},
-author={J. {West} and N. {Klingensmith} and G. {Thiruvathukal}},
-booktitle={2020 IEEE International Conference on Fog Computing (ICFC)}, title={FLIC: A Distributed Fog Cache for City-Scale Applications},
-year={2020},
-volume={},
-number={},
-pages={73-78},
-abstract={We present FLIC, a distributed software data caching framework for fogs that reduces network traffic and latency. FLIC is targeted toward city-scale deployments of cooperative IoT devices in which each node gathers and shares data with surrounding devices. As machine learning and other data processing techniques that require large volumes of training data are ported to low-cost and low-power IoT systems, we expect that data analysis will be moved away from the cloud. Separation from the cloud will reduce reliance on power-hungry centralized cloud-based infrastructure. However, city-scale deployments of cooperative IoT devices often connect to the Internet with cellular service, in which service charges are proportional to network usage. IoT system architects must be clever in order to keep costs down in these scenarios. To reduce the network bandwidth required to operate city-scale deployments of cooperative IoT systems, FLIC implements a distributed cache on the IoT nodes in the fog. FLIC allows the IoT network to share its data without repetitively interacting with a simple cloud storage service, reducing calls out to a backing store. Our results displayed a less than 2% miss rate on reads. Thus, allowing for only 5% of requests needing the backing store. We were also able to achieve more than 50% reduction in bytes transmitted per second.},
-keywords={cache storage;cellular radio;cloud computing;cooperative communication;data analysis;Internet of Things;learning (artificial intelligence);telecommunication power management;telecommunication traffic;data analysis;power-hungry centralized cloud-based infrastructure;low-power IoT systems;FLIC;IoT network;cloud storage service;distributed fog cache;city-scale applications;distributed software data caching framework;network traffic;cooperative IoT devices;machine learning;Coherence;Distributed databases;Cloud computing;Software;Bandwidth;Computer architecture;Containers},
-doi={10.1109/ICFC49376.2020.00019},
-ISSN={},
-html={http://ecommons.luc.edu/cs_facpubs/243},
-month={April},}
-
-
-
-@ARTICLE{8848161,
-  abbr={IEEE Magazine},
-author={Y. {Lu} and G. K. {Thiruvathukal} and A. S. {Kaseb} and K. {Gauen} and D. {Rijhwani} and R. {Dailey} and D. {Malik} and Y. {Huang} and S. {Aghajanzadeh} and M. M. {Guo}},
-journal={Computer}, title={See the World Through Network Cameras},
-year={2019},
-volume={52},
-number={10},
-pages={30-40},
-abstract={Millions of network cameras have been deployed worldwide. Real-time data from many network cameras can offer instant views of multiple locations for many applications. We describe the real-time data available from these cameras and potential applications.},
-keywords={cameras;network cameras;Cameras;IP networks;Urban areas;Real-time systems;Streaming media;Internet;Visualization},
-doi={10.1109/MC.2019.2906841},
-ISSN={1558-0814},
-month={Oct},}
-
-
-@INPROCEEDINGS{8695375,
-abbr={IEEE Conference},
-author={C. {Tung} and M. R. {Kelleher} and R. J. {Schlueter} and B. {Xu} and Y. {Lu} and G. K. {Thiruvathukal} and Y. {Chen} and Y. {Lu}},
-booktitle={2019 IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)}, title={Large-Scale Object Detection of Images from Network Cameras in Variable Ambient Lighting Conditions},
-year={2019},
-volume={},
-number={},
-pages={393-398},
-abstract={Computer vision relies on labeled datasets for training and evaluation in detecting and recognizing objects. The popular computer vision program, YOLO ("You Only Look Once"), has been shown to accurately detect objects in many major image datasets. However, the images found in those datasets, are independent of one another and cannot be used to test YOLO's consistency at detecting the same object as its environment (e.g. ambient lighting) changes. This paper describes a novel effort to evaluate YOLO's consistency for large-scale applications. It does so by working (a) at large scale and (b) by using consecutive images from a curated network of public video cameras deployed in a variety of real-world situations, including traf?c intersections, national parks, shopping malls, university campuses, etc. We speci?cally examine YOLO's ability to detect objects in different scenarios (e.g., daytime vs. night), leveraging the cameras' ability to rapidly retrieve many successive images for evaluating detection consistency. Using our camera network and advanced computing resources (supercomputers), we analyzedmorethan5millionimagescapturedby140network cameras in 24 hours. Compared with labels marked by humans (considered as "ground truth"), YOLO struggles to consistently detect the same humans and cars as their positions change from one frame to the next; it also struggles to detect objects at night time. Our ?ndings suggest that state-of-the art vision solutions should be trained by data from network camera with contextual information before they can be deployed in applications that demand high consistency on object detection.},
-keywords={cameras;computer vision;lighting;object detection;video cameras;curated network;public video cameras;YOLO's ability;successive images;detection consistency;camera network;advanced computing resources;labels;state-of-the art vision solutions;network camera;variable ambient lighting conditions;labeled datasets;training;image datasets;large-scale applications;consecutive images;high consistency;large-scale object detection;objects recognition;computer vision program;YOLO consistency;You Only Look Once;time 24.0 hour;Cameras;Object detection;Lighting;Streaming media;Automobiles;Computer vision;Detectors;Computer Vision;Object Recognition;Network Cameras;Object Detection},
-doi={10.1109/MIPR.2019.00080},
-ISSN={},
-month={March},}
-
-
-@ARTICLE{8693826,
-abbr={IEEE Conference},
-author={S. {Alyamkin} and M. {Ardi} and A. C. {Berg} and A. {Brighton} and B. {Chen} and Y. {Chen} and H. {Cheng} and Z. {Fan} and C. {Feng} and B. {Fu} and K. {Gauen} and A. {Goel} and A. {Goncharenko} and X. {Guo} and S. {Ha} and A. {Howard} and X. {Hu} and Y. {Huang} and D. {Kang} and J. {Kim} and J. G. {Ko} and A. {Kondratyev} and J. {Lee} and S. {Lee} and S. {Lee} and Z. {Li} and Z. {Liang} and J. {Liu} and X. {Liu} and Y. {Lu} and Y. {Lu} and D. {Malik} and H. H. {Nguyen} and E. {Park} and D. {Repin} and L. {Shen} and T. {Sheng} and F. {Sun} and D. {Svitov} and G. K. {Thiruvathukal} and B. {Zhang} and J. {Zhang} and X. {Zhang} and S. {Zhuo}},
-journal={IEEE Journal on Emerging and Selected Topics in Circuits and Systems}, title={Low-Power Computer Vision: Status, Challenges, and Opportunities},
-year={2019},
-volume={9},
-number={2},
-pages={411-421},
-abstract={Computer vision has achieved impressive progress in recent years. Meanwhile, mobile phones have become the primary computing platforms for millions of people. In addition to mobile phones, many autonomous systems rely on visual data for making decisions, and some of these systems have limited energy (such as unmanned aerial vehicles also called drones and mobile robots). These systems rely on batteries, and energy efficiency is critical. This paper serves the following two main purposes. First, examine the state of the art for low-power solutions to detect objects in images. Since 2015, the IEEE Annual International Low-Power Image Recognition Challenge (LPIRC) has been held to identify the most energy-efficient computer vision solutions. This paper summarizes the 2018 winners' solutions. Second, suggest directions for research as well as opportunities for low-power computer vision.},
-keywords={computer vision;object detection;visual data;decision making;batteries;object detection;energy-efficient computer vision solutions;low-power solutions;energy efficiency;unmanned aerial vehicles;autonomous systems;primary computing platforms;mobile phones;low-power computer vision;Computer vision;Image recognition;Hardware;Mobile handsets;Software;Computer architecture;Benchmark testing;Computer vision;low-power electronics;object detection;machine intelligence},
-doi={10.1109/JETCAS.2019.2911899},
-ISSN={2156-3365},
-month={June},}
-
-
-@ARTICLE{8594612,
-  abbr={IEEE Magazine},
-author={Z. {Kapach} and A. {Ulmer} and D. {Merrick} and A. {Alikhan} and Y. {Lu} and A. {Mohan} and A. S. {Kaseb} and G. K. {Thiruvathukal}},
-journal={IEEE MultiMedia}, title={Cloud Resource Optimization for Processing Multiple Streams of Visual Data},
-year={2019},
-volume={26},
-number={3},
-pages={31-41},
-abstract={Hundreds of millions of network cameras have been installed throughout the world. Each is capable of providing a vast amount of real-time data. Analyzing the massive data generated by these cameras requires significant computational resources and the demands may vary over time. Cloud computing shows the most promise to provide the needed resources on demand. In this paper, we investigate how to allocate cloud resources when analyzing real-time data streams from network cameras. A resource manager considers many factors that affect its decisions, including the types of analysis, the number of data streams, and the locations of the cameras. The manager then selects the most cost-efficient types of cloud instances (e.g., central processing unit versus general-purpose graphics processing units) to meet the computational demands for analyzing streams. We evaluate the effectiveness of our approach using Amazon Web Services. Experiments demonstrate more than 50% cost reduction for real workloads.},
-keywords={cloud computing;data visualisation;optimisation;resource allocation;Web services;cloud resource optimization;visual data;network cameras;cloud computing;resource manager;cost-efficient types;cloud instances;computational demands;computational resources;real-time data streams;Amazon Web services;multiple streams processing;Cloud computing;Cameras;Streaming media;Graphics processing units;Real-time systems;Central Processing Unit;Visualization},
-doi={10.1109/MMUL.2018.2890255},
-ISSN={1941-0166},
-month={July},}
+  abbr={IEEE Conference},
+  selected={true},
+  author={J. {West} and N. {Klingensmith} and G. {Thiruvathukal}},
+  booktitle={2020 IEEE International Conference on Fog Computing (ICFC)}, title={FLIC: A Distributed Fog Cache for City-Scale Applications},
+  year={2020},
+  volume={},
+  number={},
+  pages={73-78},
+  abstract={We present FLIC, a distributed software data caching framework for fogs that reduces network traffic and latency. FLIC is targeted toward city-scale deployments of cooperative IoT devices in which each node gathers and shares data with surrounding devices. As machine learning and other data processing techniques that require large volumes of training data are ported to low-cost and low-power IoT systems, we expect that data analysis will be moved away from the cloud. Separation from the cloud will reduce reliance on power-hungry centralized cloud-based infrastructure. However, city-scale deployments of cooperative IoT devices often connect to the Internet with cellular service, in which service charges are proportional to network usage. IoT system architects must be clever in order to keep costs down in these scenarios. To reduce the network bandwidth required to operate city-scale deployments of cooperative IoT systems, FLIC implements a distributed cache on the IoT nodes in the fog. FLIC allows the IoT network to share its data without repetitively interacting with a simple cloud storage service, reducing calls out to a backing store. Our results displayed a less than 2% miss rate on reads. Thus, allowing for only 5% of requests needing the backing store. We were also able to achieve more than 50% reduction in bytes transmitted per second.},
+  keywords={cache storage;cellular radio;cloud computing;cooperative communication;data analysis;Internet of Things;learning (artificial intelligence);telecommunication power management;telecommunication traffic;data analysis;power-hungry centralized cloud-based infrastructure;low-power IoT systems;FLIC;IoT network;cloud storage service;distributed fog cache;city-scale applications;distributed software data caching framework;network traffic;cooperative IoT devices;machine learning;Coherence;Distributed databases;Cloud computing;Software;Bandwidth;Computer architecture;Containers},
+  doi={10.1109/ICFC49376.2020.00019},
+  ISSN={},
+  html={http://ecommons.luc.edu/cs_facpubs/243},
+  month={April},
+}
 
 
 @INPROCEEDINGS{8588655,
   abbr={IEEE Conference},
-author={N. U. {Eisty} and G. K. {Thiruvathukal} and J. C. {Carver}},
-booktitle={2018 IEEE 14th International Conference on e-Science (e-Science)}, title={A Survey of Software Metric Use in Research Software Development},
-year={2018},
-volume={},
-number={},
-pages={212-222},
-abstract={Background: Breakthroughs in research increasingly depend on complex software libraries, tools, and applications aimed at supporting specific science, engineering, business, or humanities disciplines. The complexity and criticality of this software motivate the need for ensuring quality and reliability. Software metrics are a key tool for assessing, measuring, and understanding software quality and reliability. Aims: The goal of this work is to better understand how research software developers use traditional software engineering concepts, like metrics, to support and evaluate both the software and the software development process. One key aspect of this goal is to identify how the set of metrics relevant to research software corresponds to the metrics commonly used in traditional software engineering. Method: We surveyed research software developers to gather information about their knowledge and use of code metrics and software process metrics. We also analyzed the influence of demographics (project size, development role, and development stage) on these metrics. Results: The survey results, from 129 respondents, indicate that respondents have a general knowledge of metrics. However, their knowledge of specific SE metrics is lacking, their use even more limited. The most used metrics relate to performance and testing. Even though code complexity often poses a significant challenge to research software development, respondents did not indicate much use of code metrics. Conclusions: Research software developers appear to be interested and see some value in software metrics but may be encountering roadblocks when trying to use them. Further study is needed to determine the extent to which these metrics could provide value in continuous process improvement.},
-keywords={software development management;software libraries;software metrics;software quality;software reliability;research software developers;code metrics;software process metrics;research software development;software metrics;complex software libraries;reliability;software development process;software quality;software engineering concepts;SE metrics;Software;Complexity theory;Software metrics;Tools;Software engineering;Survey, Software Metrics, Software Engineering, Research Software},
-doi={10.1109/eScience.2018.00036},
-ISSN={},
-month={Oct},}
+  author={N. U. {Eisty} and G. K. {Thiruvathukal} and J. C. {Carver}},
+  booktitle={2018 IEEE 14th International Conference on e-Science (e-Science)}, title={A Survey of Software Metric Use in Research Software Development},
+  year={2018},
+  volume={},
+  number={},
+  pages={212-222},
+  abstract={Background: Breakthroughs in research increasingly depend on complex software libraries, tools, and applications aimed at supporting specific science, engineering, business, or humanities disciplines. The complexity and criticality of this software motivate the need for ensuring quality and reliability. Software metrics are a key tool for assessing, measuring, and understanding software quality and reliability. Aims: The goal of this work is to better understand how research software developers use traditional software engineering concepts, like metrics, to support and evaluate both the software and the software development process. One key aspect of this goal is to identify how the set of metrics relevant to research software corresponds to the metrics commonly used in traditional software engineering. Method: We surveyed research software developers to gather information about their knowledge and use of code metrics and software process metrics. We also analyzed the influence of demographics (project size, development role, and development stage) on these metrics. Results: The survey results, from 129 respondents, indicate that respondents have a general knowledge of metrics. However, their knowledge of specific SE metrics is lacking, their use even more limited. The most used metrics relate to performance and testing. Even though code complexity often poses a significant challenge to research software development, respondents did not indicate much use of code metrics. Conclusions: Research software developers appear to be interested and see some value in software metrics but may be encountering roadblocks when trying to use them. Further study is needed to determine the extent to which these metrics could provide value in continuous process improvement.},
+  keywords={software development management;software libraries;software metrics;software quality;software reliability;research software developers;code metrics;software process metrics;research software development;software metrics;complex software libraries;reliability;software development process;software quality;software engineering concepts;SE metrics;Software;Complexity theory;Software metrics;Tools;Software engineering;Survey, Software Metrics, Software Engineering, Research Software},
+  doi={10.1109/eScience.2018.00036},
+  ISSN={},
+  month={Oct},
+}
 
 
 @INPROCEEDINGS{8574200,
   abbr={IEEE Conference},
-author={C. {Surakitbanharn} and C. {Yau} and G. {Wang} and A. {Chawla} and Y. {Pan} and Z. {Sun} and S. {Yellin} and D. {Ebert} and Y. {Lu} and G. K. {Thiruvathukal}},
-booktitle={2018 IEEE International Symposium on Technologies for Homeland Security (HST)}, title={Cross-referencing social media and public surveillance camera data for disaster response},
-year={2018},
-volume={},
-number={},
-pages={1-9},
-abstract={Physical media (like surveillance cameras) and social media (like Instagram and Twitter) may both be useful in attaining on-the-ground information during an emergency or disaster situation. However, the intersection and reliability of both surveillance cameras and social media during a natural disaster are not fully understood. To address this gap, we tested whether social media is of utility when physical surveillance cameras went off-line during Hurricane Irma in 2017. Specifically, we collected and compared geo-tagged Instagram and Twitter posts in the state of Florida during times and in areas where public surveillance cameras went off-line. We report social media content and frequency and content to determine the utility for emergency managers or first responders during a natural disaster.},
-keywords={cameras;disasters;emergency management;social networking (online);social media content;natural disaster;public surveillance camera data;Instagram;Twitter;emergency management;Cameras;Hurricanes;Twitter;Surveillance;Videos;Media},
-doi={10.1109/THS.2018.8574200},
-ISSN={},
-month={Oct},}
+  author={C. {Surakitbanharn} and C. {Yau} and G. {Wang} and A. {Chawla} and Y. {Pan} and Z. {Sun} and S. {Yellin} and D. {Ebert} and Y. {Lu} and G. K. {Thiruvathukal}},
+  booktitle={2018 IEEE International Symposium on Technologies for Homeland Security (HST)}, title={Cross-referencing social media and public surveillance camera data for disaster response},
+  year={2018},
+  volume={},
+  number={},
+  pages={1-9},
+  abstract={Physical media (like surveillance cameras) and social media (like Instagram and Twitter) may both be useful in attaining on-the-ground information during an emergency or disaster situation. However, the intersection and reliability of both surveillance cameras and social media during a natural disaster are not fully understood. To address this gap, we tested whether social media is of utility when physical surveillance cameras went off-line during Hurricane Irma in 2017. Specifically, we collected and compared geo-tagged Instagram and Twitter posts in the state of Florida during times and in areas where public surveillance cameras went off-line. We report social media content and frequency and content to determine the utility for emergency managers or first responders during a natural disaster.},
+  keywords={cameras;disasters;emergency management;social networking (online);social media content;natural disaster;public surveillance camera data;Instagram;Twitter;emergency management;Cameras;Hurricanes;Twitter;Surveillance;Videos;Media},
+  doi={10.1109/THS.2018.8574200},
+  ISSN={},
+  month={Oct},
+}
 
 
 @INPROCEEDINGS{8396976,
