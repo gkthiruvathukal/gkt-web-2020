@@ -26,6 +26,7 @@ My primary research training is in the areas of high-performance computing, dist
 Lately, I have been spending a significant amount of time on addressing software engineering in machine learning and computer vision.
 
 My doctoral research focused on object-oriented approaches to parallel programming and the development of object models, languages, libraries, middleware, and tools for parallel programming, which incorporated elements of dataflow computing, actors, and computational agents, resulting in several research prototypes written in the C and C++ languages on Unix platforms.
-After completing and defending my disseration, I re-implemented many of the ideas from my dissertation in the Java programming language, which resulted in a book, [High-Performance Java Platform Computing](https://ecommons.luc.edu/cs_facpubs/3/) which was published by Prentice Hall and Sun Microsystems Press. The concurrent and parallel ideas in our book (and accompanying programming library) were cited by [JSR-166 (Concurrency Utilities)](https://www.jcp.org/en/jsr/detail?id=166) as a related/existing work.
+After completing and defending my disseration, I re-implemented many of the ideas from my dissertation in the Java programming language, which resulted in a book {% cite ChristopherThiruvathukalHPJava %}. The concurrent and parallel ideas in our book (and accompanying programming library) were cited by [JSR-166 (Concurrency Utilities)](https://www.jcp.org/en/jsr/detail?id=166) as a related/existing work.
 
 More detail can be found in my longer bio (to appear soon).
+

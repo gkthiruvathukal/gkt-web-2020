@@ -3,8 +3,8 @@ layout: page
 permalink: /publications/
 title: publications
 description: Publications by categories in reversed chronological order.
-years: [2016, 2012, 2000]
 nav: true
+years: [2016, 2012, 2002, 2000]
 ---
 
 Please note that I am still in the process of importing and updating metadata for various publications.
@@ -13,13 +13,22 @@ If you are looking for something not here, see the [Loyola Digital Commons Compu
 ## Books
 
 <div class="publications">
-
-{% for y in page.years %}
-  {% bibliography -f books -q @*[year={{y}}]* %}
-{% endfor %}
-
+{% bibliography -q @book[year=2016] %}
 </div>
 
+<div class="publications">
+{% bibliography -q @book[year=2012] %}
+</div>
+
+<div class="publications">
+{% bibliography -q @book[year=2002] %}
+</div>
+
+<div class="publications">
+{% bibliography -q @book[year=2000] %}
+</div>
+
+{% bibliography -q ChristopherThiruvathukalShafaeeWPP %}
 ## Publications
 
 <div class="publications">
@@ -27,7 +36,7 @@ If you are looking for something not here, see the [Loyola Digital Commons Compu
 {% assign yrange = (1991..2020) %}
 {% for y in yrange reversed %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% bibliography -q !@book[year={{y}}]* %}
 {% endfor %}
 
 </div>
