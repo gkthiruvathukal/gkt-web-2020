@@ -8,6 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
+    <p>Loyola University Chicago</p>
     <p>Doyle Center 301</p>
     <p>1052 W Loyola Avenue</p>
     <p>Chicago, IL 60660</p>
@@ -20,13 +21,22 @@ social: true
 Hi! You've reached the one and only home page of Professor George K. Thiruvathukal.
 
 I earned the Ph.D. and M.S. degrees in computer science from Illinois Institute of Technology in 1995 and 1990, respectively, and B.S. in computer science and physics (double major) with a mathematics minor from Lewis University in 1988.
-As a computer science major, I received the department's top computer science graduating student award and was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org>) Physics national honor society.
+As a computer science major, I received the department's top computer science graduating student award.
+As a physics major, I was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org>) Physics national honor society.
 
-My primary research training is in the areas of high-performance computing, distributed systems, and software engineering with an emphasis on techniques to support parallel and distributed programming using modern software engineering practices, languages, and paradigms (e.g. object-oriented design and functional programming).
-Lately, I have been spending a significant amount of time on addressing software engineering in machine learning and computer vision.
+My primary research training is in the areas of high-performance computing, distributed systems, and software engineering.
+Outside of my formal academic training, I have wide-ranging interests in both the sciences and humanities, where the methods of computational and data sciencies and software engineering are growing in importance. I've collaborated with many disciplines including but not limited to Biology, Physics, English, History, Anthropology, Music, and Neuroscience.
 
-My doctoral research focused on object-oriented approaches to parallel programming and the development of object models, languages, libraries, middleware, and tools for parallel programming, which incorporated elements of dataflow computing, actors, and computational agents, resulting in several research prototypes written in the C and C++ languages on Unix platforms.
-After completing and defending my disseration, I re-implemented many of the ideas from my dissertation in the Java programming language, which resulted in a book {% cite ChristopherThiruvathukalHPJava %}. The concurrent and parallel ideas in our book (and accompanying programming library) were cited by [JSR-166 (Concurrency Utilities)](https://www.jcp.org/en/jsr/detail?id=166) as a related/existing work.
+My recent work addresses topics such as 
+  software engineering for science {% cite SE4ScienceBook %},
+  low-power computer vision {% cite ComputerCAM2 %},
+  computational neuroscience {% cite 10.3389/fncir.2020.00012 %},
+  crowdsourcing {% cite 10.1145/3366423.3380063 %} {% cite 10.1371/journal.pone.0179757 %}, 
+  platform studies {% cite CodenameRevolution %},
+  computing history {% cite CHOC.CESTEMER %},
+  and [music](https://lute.luc.edu).
 
-More detail can be found in my longer bio (to appear soon).
+My doctoral research focused on object-oriented approaches to parallel programming and the development of object models, languages, libraries, middleware, tools and techniques for parallel programming, culminating in a book in Sun Microsystems Press {% cite ChristopherThiruvathukalHPJava %}, which was referenced as prior art/related work in [JSR-166, Concurrency Utilities](https://www.jcp.org/en/jsr/detail?id=166) (a.k.a. `java.util.concurrent`.
+
+Selected publications appear below.
 
