@@ -129,7 +129,7 @@ scholar:
   # Note: This is how you get "cite" to point to a page within the site.
   relative: /publications/index.html
 
-  last_name: Einstein
+  last_name: Thiruvathukal
 
   style: apa
   locale: en

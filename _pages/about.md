@@ -13,30 +13,24 @@ profile:
     <p>1052 W Loyola Avenue</p>
     <p>Chicago, IL 60660</p>
 
-news: true
+news: false
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true
 ---
 
 Hi! You've reached the one and only home page of Professor George K. Thiruvathukal.
 
-I earned the Ph.D. and M.S. degrees in computer science from Illinois Institute of Technology in 1995 and 1990, respectively, and B.S. in computer science and physics (double major) with a mathematics minor from Lewis University in 1988.
-As a computer science major, I received the department's top computer science graduating student award.
-As a physics major, I was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org>) Physics national honor society.
+I earned the Ph.D. and M.S. degrees in Computer Science from [Illinois Institute of Technology](https://iit.edu) in 1995 and 1990, respectively, and B.S. in Computer Science and Physics (double major) with a Mathematics minor from [Lewis University](https://lewisu.edu)  in 1988.
+As a Computer Science major, I received the department's top graduating student award.
+As a Physics major, I was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org>) Physics national honor society.
 
-My primary research training is in the areas of high-performance computing, distributed systems, and software engineering.
-Outside of my formal academic training, I have wide-ranging interests in both the sciences and humanities, where the methods of computational and data sciencies and software engineering are growing in importance. I've collaborated with many disciplines including but not limited to Biology, Physics, English, History, Anthropology, Music, and Neuroscience.
+My doctoral research focused on higher-level approaches to concurrent, parallel, and distributed programming with an emphasis on models, languages, libraries, middleware, tools, and techniques.
+The culmination of this research was a book in Sun Microsystems Press and the development of a class library, which was cited as prior art and related work in [JSR-166, Concurrency Utilities](https://www.jcp.org/en/jsr/detail?id=166) (a.k.a. `java.util.concurrent`).
 
-My recent work addresses topics such as 
-  software engineering for science {% cite SE4ScienceBook %},
-  low-power computer vision {% cite ComputerCAM2 %},
-  computational neuroscience {% cite 10.3389/fncir.2020.00012 %},
-  crowdsourcing {% cite 10.1145/3366423.3380063 %} {% cite 10.1371/journal.pone.0179757 %}, 
-  platform studies {% cite CodenameRevolution %},
-  computing history {% cite CHOC.CESTEMER %},
-  and [music](https://lute.luc.edu).
+My current work addresses software engineering for science and machine learning; low-power computer vision; computational neuroscience; crowdsourcing to aid in classification and machine learning; platform studies/gaming studies; computing education; computing history; and [digital music](https://lute.luc.edu).
 
-My doctoral research focused on object-oriented approaches to parallel programming and the development of object models, languages, libraries, middleware, tools and techniques for parallel programming, culminating in a book in Sun Microsystems Press {% cite ChristopherThiruvathukalHPJava %}, which was referenced as prior art/related work in [JSR-166, Concurrency Utilities](https://www.jcp.org/en/jsr/detail?id=166) (a.k.a. `java.util.concurrent`.
+Beyond academic computer science, I have a strong interest in information technology; ethical, legal, and social issues in computing; entrepreneurship; and broadening participation in computing. See the [Software and Systems Laboratory](https://ssl.cs.luc.edu) for more details!
 
-Selected publications appear below.
+Selected publication, past and present, are included below.
+
 
