@@ -75,6 +75,8 @@ disqus_shortname: al-folio # put your disqus shortname
 # Collections
 # -----------------------------------------------------------------------------
 
+# George note: projects: output: false until it's ready
+
 collections:
   news:
     defaults:
@@ -82,7 +84,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: true
+    output:false
     permalink: /projects/:path/
 
 news_limit: 5
