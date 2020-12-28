@@ -13,6 +13,10 @@ If you are looking for something not here, see the [Loyola Digital Commons Compu
 ## Books
 
 <div class="publications">
+{% bibliography -q @book[year=2017] %}
+</div>
+
+<div class="publications">
 {% bibliography -q @book[year=2016] %}
 </div>
 
@@ -28,7 +32,6 @@ If you are looking for something not here, see the [Loyola Digital Commons Compu
 {% bibliography -q @book[year=2000] %}
 </div>
 
-{% bibliography -q ChristopherThiruvathukalShafaeeWPP %}
 ## Publications
 
 <div class="publications">
