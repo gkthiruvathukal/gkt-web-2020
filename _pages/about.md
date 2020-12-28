@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true
 ---
 
-Hi! You've reached the one and only home page of Professor George K. Thiruvathukal.
+Hi! You've reached the one and only home page of `(Professor|Dr.)? George K. Thiruvathukal`. The regex syntax indicates that it is optional to use *Professor* or *Dr.* when addressing me. I am on a first name basis with just about everyone! Most people struggle with *Thiruvathukal*, so using *George* is not only encouraged but highly recommended.
 
 I earned the Ph.D. and M.S. degrees in Computer Science from [Illinois Institute of Technology](https://iit.edu) in 1995 and 1990, respectively, and B.S. in Computer Science and Physics (double major) with a Mathematics minor from [Lewis University](https://lewisu.edu)  in 1988.
 As a Computer Science major, I received the department's top graduating student award.
