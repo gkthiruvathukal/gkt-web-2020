@@ -38,8 +38,10 @@ If you are looking for something not here, see the [Loyola Digital Commons Compu
 
 {% assign yrange = (1991..2020) %}
 {% for y in yrange reversed %}
+  {% unless y == 1996 or y == 1992 or y == 1993 or y == 1999 or y == 2001 or y == 2002 %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -q !@book[year={{y}}]* %}
+  {% endunless %}
 {% endfor %}
 
 </div>
