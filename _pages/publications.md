@@ -7,8 +7,13 @@ nav: true
 years: [2016, 2012, 2002, 2000]
 ---
 
-Please note that I am still in the process of importing and updating metadata for various publications.
-If you are looking for something not here, see the [Loyola Digital Commons Computer Science Collection](https://ecommons.luc.edu/cs_facpubs/) or contact me below.
+## Notes
+
+This is a nearly compmlete list of my publications through 2020.
+
+You can find almost all works listed here via the [Loyola Digital Commons Computer Science Collection](https://ecommons.luc.edu/cs_facpubs/) and on various academic indexing sites.
+
+If you are a co-author with a public presence and want to be linked wherever your name appears below, please consider using the [issue tracker](https://github.com/gkthiruvathukal/gkthiruvathukal.github.io/issues). My web presence is also intended to be an example of how software engineering and reproducibile research principles can be applied to myself and my own work. So you can think of it as a bug fix or feature request!
 
 ## Books
 
