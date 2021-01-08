@@ -1,214 +1,215 @@
-- lastname: [Christopher]
-  firstname: [Thomas, Thomas W.]
-  url: http://tools-of-computing.com
+"Christopher":
+  - firstname: ["Thomas", "Thomas W."]
+    url: http://tools-of-computing.com
 
-- lastname: [Lu]
-  firstname: [Yung-Hsiang]
-  url: https://engineering.purdue.edu/HELPS/Faculty/yunglu.html
+"Lu":
+  - firstname: ["Yung-Hsiang"]
+    url: https://engineering.purdue.edu/HELPS/Faculty/yunglu.html
 
-- lastname: [Carver]
-  firstname: [Jeff, Jeffrey, Jeffrey C.]
-  url: http://carver.cs.ua.edu/
+"Carver":
+  - firstname: ["Jeff", "Jeffrey", "Jeffrey C."]
+    url: http://carver.cs.ua.edu/
 
-- lastname: [Eisty]
-  firstname: [Nasir, Nasir U.]
-  url: https://neisty.github.io/
+"Eisty":
+  - firstname: ["Nasir", "Nasir U."]
+    url: https://neisty.github.io/
 
-- lastname: [Klingensmith]
-  firstname: [Neil]
-  url: https://neilklingensmith.com/
+"Klingensmith":
+  - firstname: ["Neil"]
+    url: https://neilklingensmith.com/
 
-- lastname: [Dematties]
-  firstname: [Dario, Dario J.]
-  url: https://dariodematties.com/
+"Dematties":
+  - firstname: ["Dario", "Dario J."]
+    url: https://dariodematties.com/
 
-- lastname: [Rizzi]
-  firstname: [Silvio, Silvio B.]
-  url: https://www.alcf.anl.gov/about/people/silvio-rizzi
+"Rizzi":
+  - firstname: ["Silvio", "Silvio B."]
+    url: https://www.alcf.anl.gov/about/people/silvio-rizzi
 
-- lastname: [Hong]
-  firstname: [Neil, Neil P. Chue]
-  url: https://www.software.ac.uk/about/staff/person/neil-chue-hong
+"Hong":
+  - firstname: ["Neil", "Neil P. Chue"]
+    url: https://www.software.ac.uk/about/staff/person/neil-chue-hong
 
-- lastname: [Jones]
-  firstname: [Steven, Steven E.]
-  url: http://english.usf.edu/faculty/sjones/
+"Jones":
+  - firstname: ["Steven", "Steven E."]
+    url: http://english.usf.edu/faculty/sjones/
 
-- lastname: [Greenberg]
-  firstname: [Ron, Ronald, Ron I., Ronald I.]
-  url: https://rig.cs.luc.edu/~rig/
+"Greenberg":
+  - firstname: ["Ron", "Ronald", "Ron I.", "Ronald I."]
+    url: https://rig.cs.luc.edu/~rig/
 
-- lastname: [Laufer]
-  firstname: [Konstantin]
-  url: http://laufer.cs.luc.edu/
+"Laufer":
+  - firstname: ["Konstantin"]
+    url: http://laufer.cs.luc.edu/
 
-- lastname: [Tessier]
-  firstname: [Francois, François]
-  url: http://www.francoistessier.info/
+"Läufer":
+  - firstname: ["Konstantin"]
+    url: http://laufer.cs.luc.edu
 
-- lastname: [Christensen]
-  firstname: [Cam, Cameron]
-  url: https://www.sci.utah.edu/people/cam.html
+"Tessier":
+  - firstname: ["Francois", "François"]
+    url: http://www.francoistessier.info/
 
-- lastname: [Jin]
-  firstname: [Xiaoyong]
-  url: https://www.anl.gov/profile/xiaoyong-jin
+"Christensen":
+  - firstname: ["Cam", "Cameron"]
+    url: https://www.sci.utah.edu/people/cam.html
 
-- lastname: [Barba]
-  firstname: [Lorena, Lorena A.]
-  url: https://lorenabarba.com/
+"Jin":
+  - firstname: ["Xiaoyong"]
+    url: https://www.anl.gov/profile/xiaoyong-jin
 
-- lastname: [Smith]
-  firstname: [Arfon]
-  url: https://www.arfon.org/
+"Barba":
+  - firstname: ["Lorena", "Lorena A."]
+    url: https://lorenabarba.com/
 
-- lastname: [Shafaee]
-  firstname: [John, John P.]
-  url: https://www.linkedin.com/in/johnshafaee/
+"Smith":
+  - firstname: ["Arfon"]
+    url: https://www.arfon.org/
 
-- lastname: [Dennis]
-  firstname: [David, David B.]
-  url: https://www.luc.edu/history/people/facultyandstaffdirectory/dennisdavidb.shtml
+"Shafaee":
+  - firstname: ["John", "John P."]
+    url: https://www.linkedin.com/in/johnshafaee/
 
-- lastname: [Hu]
-  firstname: [Xioa]
-  url: https://xiaohu.info/
+"Dennis":
+  - firstname: ["David", "David B."]
+    url: https://www.luc.edu/history/people/facultyandstaffdirectory/dennisdavidb.shtml
 
-- lastname: [Ghodgaonkar]
-  firstname: [Isha]
-  url: https://github.com/ishaghodgaonkar
+"Hu":
+  - firstname: ["Xioa"]
+    url: https://xiaohu.info/
 
-- lastname: ["O’Connell"]
-  firstname: [William T.]
-  url: https://www.linkedin.com/in/william-bill-o-connell-0682063/
+"Ghodgaonkar":
+  - firstname: ["Isha"]
+    url: https://github.com/ishaghodgaonkar
 
-- lastname: ["O'Connell"]
-  firstname: [William T.]
-  url: https://www.linkedin.com/in/william-bill-o-connell-0682063/
+"O’Connell":
+  - firstname: ["William T."]
+    url: https://www.linkedin.com/in/william-bill-o-connell-0682063/
 
-- lastname: [Foster]
-  firstname: [Ian, Ian T.]
-  url: https://www.anl.gov/profile/ian-t-foster 
+"O'Connell":
+  - firstname: ["William T."]
+    url: https://www.linkedin.com/in/william-bill-o-connell-0682063/
 
-- lastname: [Dickens]
-  firstname: [Phil, Philip, Phil M., Philip M.]
-  url: https://umaine.edu/scis/people/phillip-dickens/
+"Foster":
+  - firstname: ["Ian", "Ian T."]
+    url: https://www.anl.gov/profile/ian-t-foster 
 
-- lastname: [Karonis]
-  firstname: [Nick, Nicholas, Nick T., Nicholas T.]
-  url: http://www.cs.niu.edu/about/faculty-and-staff/karonis/
+"Dickens":
+  - firstname: ["Phil", "Philip", "Phil M.", "Philip M."]
+    url: https://umaine.edu/scis/people/phillip-dickens/
 
-- lastname: [Papka]
-  firstname: [Mike]
-  url: https://www.alcf.anl.gov/about/people/michael-e-papka
+"Karonis":
+  - firstname: ["Nick", "Nicholas", "Nick T.", "Nicholas T."]
+    url: http://www.cs.niu.edu/about/faculty-and-staff/karonis/
 
-- lastname: [Vishwanath]
-  firstname: [Venkat, Venkatram]
-  url: https://www.alcf.anl.gov/about/people/venkatram-vishwanath
+"Papka":
+  - firstname: ["Mike"]
+    url: https://www.alcf.anl.gov/about/people/michael-e-papka
 
-- lastname: [Lewis]
-  firstname: [Michael]
-  url: https://www.linkedin.com/in/mlewis1970/
+"Vishwanath":
+  - firstname: ["Venkat", "Venkatram"]
+    url: https://www.alcf.anl.gov/about/people/venkatram-vishwanath
 
-- lastname: [Shyu]
-  url: https://people.miami.edu/profile/shyu@miami.edu
+"Lewis":
+  - firstname: ["Michael"]
+    url: https://www.linkedin.com/in/mlewis1970/
 
-- lastname: [Matthews]
-  firstname: [Greg, Gregory, Greg J., Gregory J.]
-  url: https://www.luc.edu/math/ftfaculty/matthewsgregory.shtml
+"Shyu":
+  - url: https://people.miami.edu/profile/shyu@miami.edu
 
-- lastname: [Hurlburt]
-  firstname: [George, George F.]
-  urL: https://www.linkedin.com/in/george-hurlburt-02b0725/
+"Matthews":
+  - firstname: ["Greg", "Gregory", "Greg J.", "Gregory J."]
+    url: https://www.luc.edu/math/ftfaculty/matthewsgregory.shtml
 
-- lastname: [Läufer]
-  firstname: [Konstantin]
-  url: http://laufer.cs.luc.edu
+"Hurlburt":
+  - firstname: ["George", "George F."]
+    url: https://www.linkedin.com/in/george-hurlburt-02b0725/
 
-- lastname: [Tuecke]
-  firstname: [Steven, Steve]
-  url: https://www.globus.org/honoring-steve-tuecke
+"Tuecke":
+  - firstname: ["Steven", "Steve"]
+    url: https://www.globus.org/honoring-steve-tuecke
 
-- lastname: [von Laszewski]
-  firstname: [Gregor]
-  url: https://laszewski.github.io
+"von Laszewski":
+  - firstname: ["Gregor"]
+    url: https://laszewski.github.io
 
-- lastname: [Laszewski]
-  firstname: [Gregor]
-  url: https://laszewski.github.io
+"Laszewski":
+  - firstname: ["Gregor"]
+    url: https://laszewski.github.io
 
-- lastname: [Geisler]
-  firstname: [Jonathan]
-  url: https://cse.taylor.edu/faculty/geisler/
+"Geisler":
+  - firstname: ["Jonathan"]
+    url: https://cse.taylor.edu/faculty/geisler/
 
-- lastname: [Toonen]
-  firstname: [Brian]
-  url: https://www.alcf.anl.gov/about/people/brian-toonen
+"Toonen":
+  - firstname: ["Brian"]
+    url: https://www.alcf.anl.gov/about/people/brian-toonen
 
-- lastname: [Gropp]
-  firstname: [William]
-  url: http://wgropp.cs.illinois.edu/
+"Gropp":
+  - firstname: ["William"]
+    url: http://wgropp.cs.illinois.edu/
 
-- lastname: [Lusk]
-  firstname: [Ewing]
-  url: https://www.mcs.anl.gov/~lusk/
+"Lusk":
+  - firstname: ["Ewing"]
+    url: https://www.mcs.anl.gov/~lusk/
 
-- lastname: [Liao]
-  firstname: [Wei-Keng]
-  url: https://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/liao-wei-keng.html
+"Liao":
+  - firstname: ["Wei-Keng"]
+    url: https://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/liao-wei-keng.html
 
-- lastname: [Choudhary]
-  firstname: [Alok, Alok N.]
-  url: https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/choudhary-alok.html
+"Choudhary":
+  - firstname: ["Alok", "Alok N."]
+    url: https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/choudhary-alok.html
 
-- lastname: [Tung]
-  firstname: [Caleb]
-  url: https://www.linkedin.com/in/calebtung
+"Tung":
+  - firstname: ["Caleb"]
+    url: https://www.linkedin.com/in/calebtung
 
-- lastname: [Goel]
-  firstname: [Abhinav]
-  url: https://www.linkedin.com/in/abhinavgoel95
+"Goel":
+  - firstname: ["Abhinav"]
+    url: https://www.linkedin.com/in/abhinavgoel95
 
-- lastname: [Abegaz]
-  firstname: [Brook]
-  url: https://www.luc.edu/engineeringscience/aboutus/faculty/brookabegazphd.shtml
+"Abegaz":
+  - firstname: ["Brook"]
+    url: https://www.luc.edu/engineeringscience/aboutus/faculty/brookabegazphd.shtml
 
-- lastname: [Chan-Tin]
-  firstname: [Eric]
-  url: https://chantin.cs.luc.edu/~chantin/
+"Chan-Tin":
+  - firstname: ["Eric"]
+    url: https://chantin.cs.luc.edu/~chantin/
 
-- lastname: [Korczynski]
-  firstname: [Andrew, Andy, Andrew T., Andy T.]
-  url: https://www.linkedin.com/in/andy-korczynski-ba60bb8/
+"Korczynski":
+  - firstname: ["Andrew", "Andy", "Andrew T.", "Andy T."]
+    url: https://www.linkedin.com/in/andy-korczynski-ba60bb8/
 
-- lastname: [Wainselboim]
-  firstname: [Alejandro]
-  url: http://orcid.org/0000-0001-6787-1888
+"Wainselboim":
+  - firstname: ["Alejandro"]
+    url: http://orcid.org/0000-0001-6787-1888
 
-- lastname: [West]
-  firstname: [Jack, Jackson]
-  url: https://www.linkedin.com/in/jack-west-0b03a2121/
+"West":
+  - firstname: ["Jack", "Jackson"]
+    url: https://www.linkedin.com/in/jack-west-0b03a2121/
 
-- lastname: [Rijhwani]
-  firstname: [Damini]
-  url: https://www.linkedin.com/in/drijhwan/
+"Rijhwani":
+  - firstname: ["Damini"]
+    url: https://www.linkedin.com/in/drijhwan/
 
-- lastname: [Aghajanzadeh]
-  firstname: [Sara]
-  url: https://www.linkedin.com/in/sara-aghajanzadeh-524317107
+"Aghajanzadeh":
+  - firstname: ["Sara"]
+    url: https://www.linkedin.com/in/sara-aghajanzadeh-524317107
 
-- lastname: [Curran]
-  firstname: [Noah]
-  url: https://www.linkedin.com/in/noah-curran/
+"Curran":
+  - firstname: ["Noah"]
+    url: https://www.linkedin.com/in/noah-curran/
 
-- lastname: [Banna]
-  firstname: [Vishnu]
-  url: https://www.linkedin.com/in/vishnubanna/
+"Banna":
+    firstname: ["Vishnu"]
+    url: https://www.linkedin.com/in/vishnubanna/
 
-- lastname: [Ward]
-  firstname: [Mark, Mark D.]
-  url: https://www.stat.purdue.edu/people/faculty/mdw.html
+"Ward":
+  - firstname: ["Mark", "Mark D."]
+    url: https://www.stat.purdue.edu/people/faculty/mdw.html
 
-- lastname: [Jang]
-  firstname: [Hojoung]
-  url: https://hojoung97.github.io/
+"Jang":
+  - firstname: ["Hojoung"]
+    url: https://hojoung97.github.io/
+
