@@ -4,7 +4,6 @@ permalink: /publications/
 title: publications
 description: Publications by categories in reversed chronological order.
 nav: true
-years: [2016, 2012, 2002, 2000]
 ---
 
 ## Notes
@@ -18,34 +17,30 @@ If you are a co-author with a public presence and want to be linked wherever you
 ## Books
 
 <div class="publications">
-{% bibliography -q @book[year=2017] %}
-</div>
 
-<div class="publications">
-{% bibliography -q @book[year=2016] %}
-</div>
+{% assign years = (1991..2020) %}
+{% assign inclusions = "2017:2012:2002:2000" | split: ":" %}
+{% for year in years reversed %}
+  {% capture yeartext %}{{ year }}{% endcapture %}
+  {% if inclusions contains yeartext %}
+     <h2 class="year">{{year}}</h2>
+     {% bibliography -q @book[year={{year}}] %}
+  {% endif %}
+{% endfor %}
 
-<div class="publications">
-{% bibliography -q @book[year=2012] %}
-</div>
-
-<div class="publications">
-{% bibliography -q @book[year=2002] %}
-</div>
-
-<div class="publications">
-{% bibliography -q @book[year=2000] %}
 </div>
 
 ## Publications
 
 <div class="publications">
 
-{% assign yrange = (1991..2020) %}
-{% for y in yrange reversed %}
-  {% unless y == 1996 or y == 1992 or y == 1993 or y == 1999 or y == 2001 or y == 2002 %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -q !@book[year={{y}}]* %}
+{% assign years = (1991..2020) %}
+{% assign exclusions = "1996:1992:1993:1999:2001:2002" | split: ":" %}
+{% for year in years reversed %}
+  {% capture yeartext %}{{ year }}{% endcapture %}
+  {% unless exclusions contains yeartext %}
+     <h2 class="year">{{year}}</h2>
+     {% bibliography -q !@book[year={{year}}]* %}
   {% endunless %}
 {% endfor %}
 
