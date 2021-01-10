@@ -28,7 +28,7 @@ I earned the Ph.D. and M.S. degrees in Computer Science from [Illinois Institute
 
 As a Computer Science major at Lewis University, I received the department's top graduating student award; 
 as a Physics major at same, I was inducted into the [Sigma Pi Sigma](https://www.sigmapisigma.org/) Physics National honor society.
-During the summer of my junior year, I worked with [Philip J. Hatcher](https://www.cs.unh.edu/~pjh/)  at the University of New Hampshire on a [NSF](https://nsf.gov)-funded summer REU program focused on compiler construction, where our tools led to the development of Data Parallel C, a portable C dialect inspired by the C\* Language used to program the Connection Machine.
+During the summer of my junior year, I worked with [Philip J. Hatcher](https://www.cs.unh.edu/~pjh/)  at the University of New Hampshire on a [NSF](https://nsf.gov)-funded summer REU program focused on compiler construction, where our tools led to the development of a portable Data Parallel C dialect inspired by the C\* Language used to program the Connection Machine.
 
 My doctoral research focused on higher-level approaches to concurrent, parallel, and distributed programming with an emphasis on models, languages, libraries, middleware, tools, and techniques.
 The culmination of this research was a book in Sun Microsystems Press and the development of a class library, which was cited as prior art and related work in [JSR-166, Concurrency Utilities](https://www.jcp.org/en/jsr/detail?id=166) (a.k.a. `java.util.concurrent`).
