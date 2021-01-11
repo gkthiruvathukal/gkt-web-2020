@@ -178,17 +178,24 @@
   </header>
 
   <article>
-    <h3 id="getting-my-cv">Getting my CV</h3>
+    <h2 id="getting-my-cv">Getting my CV</h2>
 
-<p>See <a href="https://github.com/gkthiruvathukal/cv/releases/latest">the latest release of my CV</a>. This allows you to download PDF for the CV and a BibTeX file for all known publications.</p>
+<ul>
+  <li>My CV is maintained using GitHub at <a href="https://github.com/gkthiruvathukal/cv">github.com/gkthiruvathukal/cv</a> in \(\LaTeX\) format.</li>
+  <li>Get the latest release in <a href="https://github.com/gkthiruvathukal/cv/releases/latest/download/gkthiruvathukal-cv.pdf">PDF</a>.</li>
+</ul>
 
 <h3 id="technical-notes">Technical Notes</h3>
 
-<p>My CV is released on GitHub using the lovely <a href="https://github.com/xdanaux/moderncv">moderncv</a> class.
-Whenever there is a major update, the Travis-CI (continuous integration) system builds a new (latest) version.
-I will be making a blog post (and linking it here) soon, if you want to do something similar for yourself.</p>
+<ul>
+  <li>My CV is is written using the lovely <a href="https://github.com/xdanaux/moderncv">moderncv</a> class. <em>Ok, it’s not perfect, but I still like the idea of <code class="language-plaintext highlighter-rouge">moderncv</code> and hope it continues to evolve.</em></li>
+  <li>For now, I use the Travis-CI <em>continuous integration</em> system to build the CV on each commit. I’m planning to move to GitHub Actions, given some of the <em>bad</em> things that seem to be happening at Travis-CI.</li>
+  <li>I update the PDF only on <em>major</em> and <em>minor</em> releases using <code class="language-plaintext highlighter-rouge">git tag</code>. If you absolutely need the latest version (kind of unlikely) then you should pull my code and run <code class="language-plaintext highlighter-rouge">./build-cv.sh</code>.</li>
+</ul>
 
 <h3 id="build-status">Build Status</h3>
+
+<p>For nerds only…</p>
 
 <p><a href="https://travis-ci.com/gkthiruvathukal/cv"><img src="https://travis-ci.com/gkthiruvathukal/cv.svg?branch=master" alt="Build Status" /></a></p>
 
