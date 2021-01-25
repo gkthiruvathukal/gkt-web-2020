@@ -34,7 +34,7 @@ My doctoral research focused on higher-level approaches to concurrent, parallel,
 The culmination of this research was a book in Sun Microsystems Press and the development of a class library, which was cited as prior art and related work in [JSR-166, Concurrency Utilities](https://www.jcp.org/en/jsr/detail?id=166) (a.k.a. `java.util.concurrent`).
 
 Simultaneously with my doctoral studies, I worked in the computing and engineering industry from 1989-1996 for Technology Advisors (a private consultancy), Tellabs, R.R. Donnelley and Sons, and Metromail (now Experian).
-Upon completing my PhD in 1995, I was a postdoctoral computer sciensist at Argonne National Laboratory, where I worked with [Ian Foster](https://www.anl.gov/profile/ian-t-foster) *et al* on grid computing and getting messaging middleware (Message Passing Interface) to work on the first version of Globus.
+Upon completing my PhD in 1995, I was a postdoctoral computer scientist at Argonne National Laboratory, where I worked with [Ian Foster](https://www.anl.gov/profile/ian-t-foster) *et al* on grid computing and getting messaging middleware (Message Passing Interface) to work on the first version of Globus.
 
 My current work addresses software engineering for science and machine learning; low-power computer vision; computational neuroscience; crowdsourcing to aid in classification and machine learning; platform studies/gaming studies; computing education; computing history; and [digital music](https://lute.luc.edu).
 
