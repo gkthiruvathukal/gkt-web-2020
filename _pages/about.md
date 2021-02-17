@@ -18,6 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true
 ---
 
+My site will be moving to https://gkt.cs.luc.edu. Please make a note of it.
+
 Hi! You've reached the home page of `(Prof.|Dr.)? George K. Thiruvathukal`.
 The regex syntax indicates that it is optional to use *Prof.* or *Dr.* (and their expanded forms) when addressing me.
 I am on a first name basis with just about everyone, which is a tradition passed on to me by my PhD advisor, [Thomas W. Christopher](https://tools-of-computing.com), who always insisted that I call him *TC* (tee-cee) from the moment we started working together at the Illinois Institute of Technology in 1988.
