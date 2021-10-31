@@ -9,6 +9,9 @@ A sample blog page that demonstrates the inclusion of Tweets/Timelines/etc.
 <br />
 
 # Tweet
+
+This is a draft.
+
 An example of displaying a tweet : 
 {% twitter https://twitter.com/rubygems/status/518821243320287232 %}
 <br />
